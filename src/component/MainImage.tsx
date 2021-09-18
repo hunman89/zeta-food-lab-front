@@ -1,12 +1,19 @@
-import Box from '@mui/material/Box';
+import { Grid, Typography } from '@mui/material';
+import React from 'react';
 
-export default function MainImage() {
+type Props = {
+  menu: string;
+}
+
+export default function MainImage({menu}:Props) {
   return (
-    <Box
-      sx={{
-        height: 300,
-        bgcolor: 'GRAY',
-      }}
-    />
+    <Grid 
+      style={{height:400, backgroundColor: 'GRAY'}} 
+      container
+      justifyContent="center"
+      alignItems="center"
+    >
+      <Typography>{menu}</Typography>
+    </Grid>
   );
 }

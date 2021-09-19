@@ -5,6 +5,12 @@ type Props = {
   menu: string;
 };
 
+const style = {
+  fontWeight: "bold",
+  fontSize: 40,
+  color: "white",
+};
+
 export default function MainImage({ menu }: Props) {
   return (
     <Grid
@@ -13,7 +19,7 @@ export default function MainImage({ menu }: Props) {
       justifyContent="center"
       alignItems="center"
     >
-      <Typography>{menu}</Typography>
+      <Typography sx={style}>{menu}</Typography>
     </Grid>
   );
 }

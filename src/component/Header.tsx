@@ -1,4 +1,4 @@
-import { Grid } from "@mui/material";
+import { Container, Grid } from "@mui/material";
 import React, { useState } from "react";
 import longLogo from "../images/long-logo.png";
 import IntroImage from "./IntroImage";
@@ -19,20 +19,9 @@ export default function Header() {
 
   return (
     <>
-      <Grid
-        style={{ height: 90 }}
-        container
-        justifyItems="center"
-        alignItems="center"
-      >
-        <Grid
-          container
-          item
-          style={{ padding: "0 50" }}
-          justifyItems="center"
-          alignItems="center"
-        >
-          <Grid xs={4} container item justifyContent="center">
+      <Container sx={{ paddingX: 6 }}>
+        <Grid xs={12} container sx={{ height: 90 }}>
+          <Grid xs={4} container justifyItems="center" alignItems="center">
             <img
               src={longLogo}
               height="50"
@@ -43,13 +32,13 @@ export default function Header() {
               }}
             />
           </Grid>
-          <Grid container item justifyContent="center" xs={8}>
+          <Grid container justifyContent="center" xs={8}>
             {MENU_ARRAY.map((e) => (
               <MenuButton name={e} setMenu={setMenu} />
             ))}
           </Grid>
         </Grid>
-      </Grid>
+      </Container>
       {menu === "" ? <IntroImage /> : <MainImage menu={menu} />}
     </>
   );

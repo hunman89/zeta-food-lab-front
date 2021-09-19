@@ -6,10 +6,15 @@ type Props = {
   setMenu: Function;
 };
 
+const style = {
+  margin: 2,
+  fontWeight: "bold",
+};
+
 export default function MenuButton({ name, setMenu }: Props) {
   return (
     <Button
-      style={{ margin: 20 }}
+      sx={style}
       onClick={(e) => {
         e.preventDefault();
         setMenu(name);

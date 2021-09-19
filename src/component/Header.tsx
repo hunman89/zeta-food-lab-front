@@ -1,6 +1,7 @@
 import { Grid } from '@mui/material';
 import React, { useState } from 'react';
 import longLogo from '../images/long-logo.png'
+import IntroImage from './IntroImage';
 import MainImage from './MainImage';
 import MenuButton from './MenuButton';
 
@@ -34,7 +35,7 @@ export default function Header() {
         }
       </Grid>
     </Grid>
-      { menu === "" ? <Grid></Grid> :<MainImage menu={menu}/>}
+      { menu === "" ? <IntroImage/> :<MainImage menu={menu}/>}
     </>
   );
 }

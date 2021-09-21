@@ -4,7 +4,7 @@ import React from "react";
 export default function IntroImage() {
   return (
     <Grid
-      style={{ height: 800, backgroundColor: "Blue" }}
+      style={{ height: 800 }}
       container
       justifyContent="center"
       alignItems="center"

@@ -5,7 +5,8 @@ import PopupState, { bindMenu, bindHover } from "material-ui-popup-state";
 import HoverMenu from "material-ui-popup-state/HoverMenu";
 
 type menuType = { title: string; subtitle: string[] };
-const MENU_ARRAY: menuType[] = [
+
+export const MENU_ARRAY: menuType[] = [
   { title: "기업소개", subtitle: ["CEO/CTO", "비전", "회사연혁", "오시는길"] },
   { title: "연구소개", subtitle: ["미생물연구", "균총연구", "핵심기술"] },
   { title: "사업소개", subtitle: ["분석서비스", "포스트시너지", "기술협업"] },

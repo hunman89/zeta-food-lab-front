@@ -12,7 +12,7 @@ function App() {
       <Header setMenu={setMenu} />
       {menu === "" ? <IntroImage /> : <MainImage menu={menu} />}
       <div style={{ height: 500 }}>
-        {menu === "CEO/CTO" ? <Introduce /> : <div />}
+        <Introduce setMenu={setMenu} />
       </div>
       <footer>
         <Footer />

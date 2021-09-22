@@ -1,11 +1,10 @@
-import { Container } from "@material-ui/core";
 import { Grid, Typography } from "@mui/material";
-import { Box } from "@mui/system";
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { MENU_ARRAY } from "./Header";
 
-type Props = {
+interface Props {
   menu: string;
-};
+}
 
 const style = {
   fontWeight: "bold",
@@ -14,6 +13,16 @@ const style = {
 };
 
 export default function MainImage({ menu }: Props) {
+  const [title, setTitle] = useState(menu);
+
+  useEffect(() => {
+    MENU_ARRAY.forEach((menuObject) => {
+      if (menuObject.subtitle.includes(menu)) {
+        setTitle(menuObject.title);
+      }
+    });
+  }, [menu]);
+
   return (
     <Grid
       sx={{ height: 500, bgcolor: "GRAY", marginY: 10 }}
@@ -21,7 +30,7 @@ export default function MainImage({ menu }: Props) {
       justifyContent="center"
       alignItems="center"
     >
-      <Typography sx={style}>{menu}</Typography>
+      <Typography sx={style}>{title}</Typography>
     </Grid>
   );
 }

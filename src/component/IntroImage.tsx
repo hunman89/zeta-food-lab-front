@@ -1,15 +1,20 @@
 import { Grid, Typography } from "@mui/material";
 import React from "react";
+import TechBackground from "../images/tech-background.jpg";
 
 export default function IntroImage() {
   return (
     <Grid
-      style={{ height: 800 }}
+      sx={{
+        height: 800,
+        backgroundImage: `url(${TechBackground})`,
+        marginY: 10,
+      }}
       container
       justifyContent="center"
       alignItems="center"
     >
-      <Grid style={{ padding: 50 }}>
+      <Grid sx={{}}>
         <Typography variant="subtitle1" gutterBottom>
           인간의 건강하고 행복한 삶을 위한
         </Typography>

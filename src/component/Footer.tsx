@@ -10,7 +10,7 @@ const text = {
 
 export default function Footer() {
   return (
-    <Grid sx={{ height: 250, backgroundColor: "#5c6bc0" }}>
+    <Grid sx={{ height: 250, backgroundColor: "gray" }}>
       <Container sx={{ padding: 6 }}>
         <Grid xs={12} container justifyContent="center">
           <Grid xs={3} sx={{ gap: 1 }} container item justifyContent="center">
@@ -34,7 +34,9 @@ export default function Footer() {
             </Typography>
           </Grid>
           <Grid xs={3} container item justifyContent="left">
-            <Typography sx={text}>광교연구소</Typography>
+            <Typography sx={text} gutterBottom>
+              광교연구소
+            </Typography>
             <Typography sx={text}>
               경기도 수원시 영통구 창룡대로 256번길 77, 에이스광교타워3차 404호
             </Typography>

@@ -1,4 +1,4 @@
-import { Button, Container, Grid, MenuItem } from "@mui/material";
+import { AppBar, Button, Grid, MenuItem } from "@mui/material";
 import React from "react";
 import longLogo from "../images/long-logo.png";
 import PopupState, { bindMenu, bindHover } from "material-ui-popup-state";
@@ -18,6 +18,7 @@ const style = {
   margin: 2,
   fontWeight: "bold",
   color: "black",
+  fontSize: 18,
 };
 
 interface MenuProps {
@@ -26,8 +27,8 @@ interface MenuProps {
 
 export default function Header({ setMenu }: MenuProps) {
   return (
-    <Container sx={{ paddingX: 6 }}>
-      <Grid xs={12} item container sx={{ height: 90 }}>
+    <AppBar sx={{ height: 80 }} color="default">
+      <Grid xs={12} item container sx={{ paddingX: 6 }}>
         <Grid xs={4} item container justifyItems="center" alignItems="center">
           <img
             src={longLogo}
@@ -65,6 +66,6 @@ export default function Header({ setMenu }: MenuProps) {
           ))}
         </Grid>
       </Grid>
-    </Container>
+    </AppBar>
   );
 }

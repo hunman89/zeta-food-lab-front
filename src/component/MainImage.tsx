@@ -1,4 +1,6 @@
+import { Container } from "@material-ui/core";
 import { Grid, Typography } from "@mui/material";
+import { Box } from "@mui/system";
 import React from "react";
 
 type Props = {
@@ -14,7 +16,7 @@ const style = {
 export default function MainImage({ menu }: Props) {
   return (
     <Grid
-      style={{ height: 400, backgroundColor: "GRAY" }}
+      sx={{ height: 500, bgcolor: "GRAY", marginY: 10 }}
       container
       justifyContent="center"
       alignItems="center"

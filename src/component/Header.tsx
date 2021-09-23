@@ -25,9 +25,10 @@ const style = {
 interface MenuProps {
   setValue: Function;
   setMenu: Function;
+  setTitle: Function;
 }
 
-export default function Header({ setMenu, setValue }: MenuProps) {
+export default function Header({ setMenu, setValue, setTitle }: MenuProps) {
   return (
     <AppBar sx={{ height: 80 }} color="default">
       <Grid xs={12} item container sx={{ paddingX: 6 }}>
@@ -39,6 +40,8 @@ export default function Header({ setMenu, setValue }: MenuProps) {
             onClick={(e) => {
               e.preventDefault();
               setMenu("");
+              setValue(0);
+              setTitle("");
             }}
           />
         </Grid>
@@ -62,6 +65,7 @@ export default function Header({ setMenu, setValue }: MenuProps) {
                           e.preventDefault();
                           setMenu(subtitle);
                           setValue(index);
+                          setTitle(menu.title);
                         }}
                       >
                         {subtitle}

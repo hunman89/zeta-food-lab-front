@@ -1,9 +1,8 @@
 import { Grid, Typography } from "@mui/material";
-import React, { useEffect, useState } from "react";
-import { MENU_ARRAY } from "./Header";
+import React from "react";
 
-interface Props {
-  menu: string;
+interface titleProps {
+  title: string;
 }
 
 const style = {
@@ -12,17 +11,7 @@ const style = {
   color: "white",
 };
 
-export default function MainImage({ menu }: Props) {
-  const [title, setTitle] = useState(menu);
-
-  useEffect(() => {
-    MENU_ARRAY.forEach((menuObject) => {
-      if (menuObject.subtitles.includes(menu)) {
-        setTitle(menuObject.title);
-      }
-    });
-  }, [menu]);
-
+export default function MainImage({ title }: titleProps) {
   return (
     <Grid
       sx={{ height: 500, bgcolor: "GRAY", marginY: 10 }}

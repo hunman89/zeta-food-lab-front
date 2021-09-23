@@ -4,15 +4,15 @@ import longLogo from "../images/long-logo.png";
 import PopupState, { bindMenu, bindHover } from "material-ui-popup-state";
 import HoverMenu from "material-ui-popup-state/HoverMenu";
 
-type menuType = { title: string; subtitle: string[] };
+type menuType = { title: string; subtitles: string[] };
 
 export const MENU_ARRAY: menuType[] = [
-  { title: "기업소개", subtitle: ["CEO/CTO", "비전", "회사연혁", "오시는길"] },
-  { title: "연구소개", subtitle: ["미생물연구", "균총연구", "핵심기술"] },
-  { title: "사업소개", subtitle: ["분석서비스", "포스트시너지", "기술협업"] },
-  { title: "투자정보", subtitle: ["투자문의", "공고"] },
-  { title: "홍보자료", subtitle: ["회사소식"] },
-  { title: "채용", subtitle: ["채용공고"] },
+  { title: "기업소개", subtitles: ["CEO/CTO", "비전", "회사연혁", "오시는길"] },
+  { title: "연구소개", subtitles: ["미생물연구", "균총연구", "핵심기술"] },
+  { title: "사업소개", subtitles: ["분석서비스", "포스트시너지", "기술협업"] },
+  { title: "투자정보", subtitles: ["투자문의", "공고"] },
+  { title: "홍보자료", subtitles: ["회사소식"] },
+  { title: "채용", subtitles: ["채용공고"] },
 ];
 
 const style = {
@@ -23,10 +23,11 @@ const style = {
 };
 
 interface MenuProps {
+  setValue: Function;
   setMenu: Function;
 }
 
-export default function Header({ setMenu }: MenuProps) {
+export default function Header({ setMenu, setValue }: MenuProps) {
   return (
     <AppBar sx={{ height: 80 }} color="default">
       <Grid xs={12} item container sx={{ paddingX: 6 }}>
@@ -46,15 +47,21 @@ export default function Header({ setMenu }: MenuProps) {
             <PopupState variant="popover" popupId="demo-popup-menu">
               {(popupState) => (
                 <React.Fragment>
-                  <Button id={menu.title} sx={style} {...bindHover(popupState)}>
+                  <Button
+                    key={menu.title}
+                    sx={style}
+                    {...bindHover(popupState)}
+                  >
                     {menu.title}
                   </Button>
                   <HoverMenu {...bindMenu(popupState)}>
-                    {menu.subtitle.map((subtitle: string) => (
+                    {menu.subtitles.map((subtitle: string, index: number) => (
                       <MenuItem
+                        key={subtitle}
                         onClick={(e) => {
                           e.preventDefault();
                           setMenu(subtitle);
+                          setValue(index);
                         }}
                       >
                         {subtitle}

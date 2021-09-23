@@ -5,7 +5,8 @@ import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 
 interface MenuProps {
-  setMenu: Function;
+  value: number;
+  setValue: Function;
 }
 
 interface TabPanelProps {
@@ -41,9 +42,7 @@ function a11yProps(index: number) {
   };
 }
 
-export default function Introduce({ setMenu }: MenuProps) {
-  const [value, setValue] = React.useState(0);
-
+export default function Introduce({ value, setValue }: MenuProps) {
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
     setValue(newValue);
   };

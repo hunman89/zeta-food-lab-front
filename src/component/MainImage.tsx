@@ -17,7 +17,7 @@ export default function MainImage({ menu }: Props) {
 
   useEffect(() => {
     MENU_ARRAY.forEach((menuObject) => {
-      if (menuObject.subtitle.includes(menu)) {
+      if (menuObject.subtitles.includes(menu)) {
         setTitle(menuObject.title);
       }
     });

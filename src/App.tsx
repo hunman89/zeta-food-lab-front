@@ -7,12 +7,14 @@ import MainImage from "./component/MainImage";
 
 function App() {
   const [menu, setMenu] = useState("");
+  const [value, setValue] = useState(0);
+
   return (
     <div className="App">
-      <Header setMenu={setMenu} />
+      <Header setMenu={setMenu} setValue={setValue} />
       {menu === "" ? <IntroImage /> : <MainImage menu={menu} />}
       <div style={{ height: 500 }}>
-        <Introduce setMenu={setMenu} />
+        <Introduce value={value} setValue={setValue} />
       </div>
       <footer>
         <Footer />

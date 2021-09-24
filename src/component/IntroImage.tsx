@@ -6,7 +6,7 @@ export default function IntroImage() {
   return (
     <Grid
       sx={{
-        height: 800,
+        height: 1000,
         backgroundImage: `url(${TechBackground})`,
         marginY: 10,
       }}

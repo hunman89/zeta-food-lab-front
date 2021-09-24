@@ -6,6 +6,7 @@ import Header from "./component/Header";
 import Introduce from "./component/Introduce";
 import IntroImage from "./component/IntroImage";
 import Invest from "./component/Invest";
+import Main from "./component/Main";
 import MainImage from "./component/MainImage";
 import Promotion from "./component/Promotion";
 import Research from "./component/Research";
@@ -20,7 +21,7 @@ function App() {
   };
 
   const mainContext: context = {
-    메인: <div></div>,
+    메인: <Main />,
     기업소개: <Introduce value={value} setValue={setValue} />,
     연구소개: <Research value={value} setValue={setValue} />,
     사업소개: <Business value={value} setValue={setValue} />,

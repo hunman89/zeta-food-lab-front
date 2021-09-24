@@ -31,7 +31,7 @@ interface MenuProps {
 export default function Header({ setMenu, setValue, setTitle }: MenuProps) {
   return (
     <AppBar sx={{ height: 80 }} color="default">
-      <Grid xs={12} item container sx={{ paddingX: 6 }}>
+      <Grid xs={12} item container sx={{ paddingX: "20%" }}>
         <Grid xs={4} item container justifyItems="center" alignItems="center">
           <img
             src={longLogo}
@@ -41,7 +41,7 @@ export default function Header({ setMenu, setValue, setTitle }: MenuProps) {
               e.preventDefault();
               setMenu("");
               setValue(0);
-              setTitle("");
+              setTitle("메인");
             }}
           />
         </Grid>

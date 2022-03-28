@@ -4,33 +4,85 @@ import Link from "next/link";
 const Header = () => {
   return (
     <div>
-      <div className=" flex fixed h-24 border-b-2 w-full">
+      <div className="flex fixed h-24 border-b-2 w-full">
         <div className="flex w-full max-w-5xl justify-between items-center mx-auto px-10">
           <Link href={"/"}>
             <a>제타푸드랩</a>
           </Link>
-          <div className="flex gap-20">
+          <div className="group flex space-x-16 h-full items-center text-lg">
             <Link href={"/business"}>
-              <a className="font-bold">기업소개</a>
+              <a>기업소개</a>
             </Link>
             <Link href={"/business"}>
-              <a className="font-bold">연구소개</a>
+              <a>연구소개</a>
             </Link>
             <Link href={"/business"}>
-              <a className="font-bold">사업소개</a>
+              <a>사업소개</a>
             </Link>
             <Link href={"/business"}>
-              <a className="font-bold">투자정보</a>
+              <a>투자정보</a>
             </Link>
             <Link href={"/business"}>
-              <a className="font-bold">홍보자료</a>
+              <a>홍보자료</a>
             </Link>
+            <div className="group-hover:visible invisible fixed right-[10%] top-24 flex space-x-16 p-10 shadow-md border-none text-lg">
+              <div className="flex flex-col space-y-3">
+                <div className="font-bold">기업소개</div>
+                <Link href={"/business"}>
+                  <a>CEO/CTO</a>
+                </Link>
+                <Link href={"/business"}>
+                  <a>비전</a>
+                </Link>
+                <Link href={"/business"}>
+                  <a>회사연혁</a>
+                </Link>
+                <Link href={"/business"}>
+                  <a>오시는길</a>
+                </Link>
+              </div>
+              <div className="flex flex-col space-y-3">
+                <div className="font-bold">연구소개</div>
+                <Link href={"/business"}>
+                  <a>미생물연구</a>
+                </Link>
+                <Link href={"/business"}>
+                  <a>균총연구</a>
+                </Link>
+                <Link href={"/business"}>
+                  <a>핵심기술</a>
+                </Link>
+              </div>
+              <div className="flex flex-col space-y-3">
+                <div className="font-bold">사업소개</div>
+                <Link href={"/business"}>
+                  <a>분석서비스</a>
+                </Link>
+                <Link href={"/business"}>
+                  <a>포스트시너지</a>
+                </Link>
+                <Link href={"/business"}>
+                  <a>기술협업</a>
+                </Link>
+              </div>
+              <div className="flex flex-col space-y-3">
+                <div className="font-bold">투자정보</div>
+                <Link href={"/business"}>
+                  <a>투자문의</a>
+                </Link>
+                <Link href={"/business"}>
+                  <a>공고</a>
+                </Link>
+              </div>
+              <div className="flex-col space-y-3">
+                <div className="font-bold">홍보자료</div>
+                <Link href={"/business"}>
+                  <a>회사소식</a>
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div className="hidden fixed right-5 top-24">
-        CEO/CTO, 비전, 회사연혁, 오시는길/ 미생물연구, 균총연구, 핵심기술/
-        분석서비스, 포스트시너지, 기술협업 투자문의, 공고 회사소식
       </div>
     </div>
   );

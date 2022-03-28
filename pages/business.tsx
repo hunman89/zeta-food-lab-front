@@ -3,11 +3,9 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
-
-interface MenuProps {
-  value: number;
-  setValue: Function;
-}
+import { NextPage } from "next";
+import Layout from "../components/layout";
+import Head from "next/head";
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -42,25 +40,15 @@ function a11yProps(index: number) {
   };
 }
 
-export default function Employment({ value, setValue }: MenuProps) {
-  const handleChange = (event: React.SyntheticEvent, newValue: number) => {
-    setValue(newValue);
-  };
-
+const Business: NextPage = () => {
   return (
-    <Box sx={{ width: "70%", paddingX: "15%" }}>
-      <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
-        <Tabs
-          value={value}
-          onChange={handleChange}
-          aria-label="basic tabs example"
-        >
-          <Tab label="채용공고" {...a11yProps(0)} />
-        </Tabs>
-      </Box>
-      <TabPanel value={value} index={0}>
-        Item One
-      </TabPanel>
-    </Box>
+    <Layout>
+      <Head>
+        <title>business</title>
+      </Head>
+      <div className=" pt-36">business</div>
+    </Layout>
   );
-}
+};
+
+export default Business;

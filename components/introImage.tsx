@@ -1,13 +1,11 @@
 import { Grid, Typography } from "@mui/material";
 import React from "react";
-import TechBackground from "../images/tech-background.jpg";
 
-export default function IntroImage() {
+const IntroImage = () => {
   return (
     <Grid
       sx={{
         height: 1000,
-        backgroundImage: `url(${TechBackground})`,
         marginY: 10,
       }}
       container
@@ -30,4 +28,6 @@ export default function IntroImage() {
       </Grid>
     </Grid>
   );
-}
+};
+
+export default IntroImage;

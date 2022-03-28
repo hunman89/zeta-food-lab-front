@@ -1,6 +1,5 @@
 import { Container, Grid, Typography } from "@mui/material";
 import React from "react";
-import ShortLogo from "../images/short-logo.png";
 import MailRoundedIcon from "@mui/icons-material/MailRounded";
 
 const text = {
@@ -8,13 +7,12 @@ const text = {
   fontWeight: "bold",
 };
 
-export default function Footer() {
+const Footer = () => {
   return (
     <Grid sx={{ height: 250, backgroundColor: "gray" }}>
       <Container sx={{ padding: 6 }}>
         <Grid xs={12} container justifyContent="center">
           <Grid xs={3} sx={{ gap: 1 }} container item justifyContent="center">
-            <img src={ShortLogo} height="20" alt="long-zeta-food-lab-logo" />
             <Typography sx={text}>주식회사 제타푸드랩</Typography>
           </Grid>
           <Grid xs={3} container item justifyContent="center">
@@ -51,4 +49,6 @@ export default function Footer() {
       </Container>
     </Grid>
   );
-}
+};
+
+export default Footer;

@@ -1,5 +1,7 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
+import Logo from "../public/logo.png";
 
 const Header = () => {
   return (
@@ -7,7 +9,9 @@ const Header = () => {
       <div className="flex fixed h-24 border-b-2 w-full">
         <div className="flex w-full max-w-5xl justify-between items-center mx-auto px-10">
           <Link href={"/"}>
-            <a>제타푸드랩</a>
+            <a className="w-40">
+              <Image src={Logo} alt="Zeta Food Lab Logo"></Image>
+            </a>
           </Link>
           <div className="group flex space-x-16 h-full items-center text-lg">
             <Link href={"/business"}>

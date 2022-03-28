@@ -1,4 +1,6 @@
+import Image from "next/image";
 import React from "react";
+import simpleLogo from "../public/simpleLogo.png";
 
 const Footer = () => {
   return (
@@ -6,6 +8,9 @@ const Footer = () => {
       <div className="py-10 max-w-5xl mx-auto">
         <div className="flex items-center justify-around gap-3">
           <div className=" w-1/4 text-white font-medium text-2xl">
+            <div className="w-24">
+              <Image src={simpleLogo}></Image>
+            </div>
             주식회사 제타푸드랩
           </div>
           <div className="w-1/4 text-white font-medium text-2xl">ADDRESS</div>
@@ -14,7 +19,7 @@ const Footer = () => {
         </div>
         <div className="flex items-center justify-around pt-10 gap-3">
           <div className="w-1/4 text-white text-md">
-            © 2021. ZETA FOOD LAB Inc. All Rights Reserved.
+            © 2022. ZETA FOOD LAB Inc. All Rights Reserved.
           </div>
           <div className="w-1/4 text-white text-md">
             <div className="font-medium">광교연구소 </div>

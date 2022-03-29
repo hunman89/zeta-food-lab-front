@@ -8,7 +8,7 @@ const Home: NextPage = () => {
       <Head>
         <title>Home</title>
       </Head>
-      <div className="py-80">
+      <div className="py-80 max-w-6xl mx-auto">
         <span className="flex text-2xl font-medium">
           인간의 건강하고 행복한 삶을 위한
         </span>

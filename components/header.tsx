@@ -6,7 +6,7 @@ import Logo from "../public/logo.png";
 const Header = () => {
   return (
     <div>
-      <div className="flex fixed h-24 border-b-2 w-full">
+      <div className="flex fixed h-24 border-b-2 w-full bg-white">
         <div className="flex w-full max-w-5xl justify-between items-center mx-auto px-10">
           <Link href={"/"}>
             <a className="w-40">
@@ -29,7 +29,7 @@ const Header = () => {
             <Link href={"/business"}>
               <a>홍보자료</a>
             </Link>
-            <div className="group-hover:visible invisible fixed right-[10%] top-24 flex space-x-16 p-10 shadow-md border-none text-lg">
+            <div className="group-hover:visible invisible fixed right-[10%] top-24 flex space-x-16 p-10 shadow-md border-none text-lg bg-white">
               <div className="flex flex-col space-y-3">
                 <div className="font-bold">기업소개</div>
                 <Link href={"/business"}>

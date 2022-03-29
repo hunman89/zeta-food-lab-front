@@ -9,7 +9,7 @@ export default function Layout({ children }: LayoutProps) {
   return (
     <div>
       <Header></Header>
-      <div className="w-full max-w-5xl mx-auto pt-24">{children}</div>
+      <div className="w-full mx-auto pt-24">{children}</div>
       <Footer></Footer>
     </div>
   );

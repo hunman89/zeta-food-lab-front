@@ -9,7 +9,7 @@ const Business: NextPage = () => {
       <Head>
         <title>business</title>
       </Head>
-      <div className="flex py-48 bg-slate-500 justify-center">
+      <div className="flex py-64 bg-slate-500 justify-center">
         <div className="text-white font-bold text-5xl">기업소개</div>
       </div>
       <div className="w-full max-w-6xl mx-auto py-20">

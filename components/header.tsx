@@ -13,75 +13,81 @@ const Header = () => {
               <Image src={Logo} alt="Zeta Food Lab Logo"></Image>
             </a>
           </Link>
-          <div className="group flex space-x-16 h-full items-center text-lg">
-            <Link href={"/business"}>
-              <a>기업소개</a>
+          <div className="group flex space-x-10 h-full items-center text-lg">
+            <Link href={"/company/overview"}>
+              <a>COMPANY</a>
+            </Link>
+            <Link href={"/research"}>
+              <a>R&D</a>
             </Link>
             <Link href={"/business"}>
-              <a>연구소개</a>
+              <a>BUSINESS</a>
             </Link>
             <Link href={"/business"}>
-              <a>사업소개</a>
+              <a>NOTICE</a>
             </Link>
             <Link href={"/business"}>
-              <a>투자정보</a>
+              <a>RECRUIT</a>
             </Link>
-            <Link href={"/business"}>
-              <a>홍보자료</a>
+            <Link href={"/contact"}>
+              <a>CONTACT</a>
             </Link>
             <div className="group-hover:visible invisible fixed right-[10%] top-24 flex space-x-16 p-10 shadow-md border-none text-lg bg-white">
               <div className="flex flex-col space-y-3">
-                <div className="font-bold">기업소개</div>
+                <div className="font-bold">COMPANY</div>
+                <Link href={"/company/overview"}>
+                  <a>기업개요</a>
+                </Link>
+                <Link href={"/company/ceo"}>
+                  <a>CEO</a>
+                </Link>
                 <Link href={"/business"}>
-                  <a>CEO/CTO</a>
+                  <a>연혁</a>
                 </Link>
                 <Link href={"/business"}>
                   <a>비전</a>
                 </Link>
                 <Link href={"/business"}>
-                  <a>회사연혁</a>
-                </Link>
-                <Link href={"/business"}>
-                  <a>오시는길</a>
+                  <a>오시는 길</a>
                 </Link>
               </div>
               <div className="flex flex-col space-y-3">
-                <div className="font-bold">연구소개</div>
+                <div className="font-bold">R&D</div>
                 <Link href={"/business"}>
-                  <a>미생물연구</a>
+                  <a>현장형 미생물 진단 센서</a>
                 </Link>
                 <Link href={"/business"}>
-                  <a>균총연구</a>
+                  <a>녹차 발효 음료 개발</a>
                 </Link>
                 <Link href={"/business"}>
-                  <a>핵심기술</a>
-                </Link>
-              </div>
-              <div className="flex flex-col space-y-3">
-                <div className="font-bold">사업소개</div>
-                <Link href={"/business"}>
-                  <a>분석서비스</a>
-                </Link>
-                <Link href={"/business"}>
-                  <a>포스트시너지</a>
-                </Link>
-                <Link href={"/business"}>
-                  <a>기술협업</a>
+                  <a>국가 지원 사업</a>
                 </Link>
               </div>
               <div className="flex flex-col space-y-3">
-                <div className="font-bold">투자정보</div>
+                <div className="font-bold">BUSINESS</div>
                 <Link href={"/business"}>
-                  <a>투자문의</a>
+                  <a>식품/바이오 컨설팅</a>
                 </Link>
                 <Link href={"/business"}>
-                  <a>공고</a>
+                  <a>식품 온라인 판매</a>
                 </Link>
               </div>
-              <div className="flex-col space-y-3">
-                <div className="font-bold">홍보자료</div>
+              <div className="flex flex-col space-y-3">
+                <div className="font-bold">NOTICE</div>
                 <Link href={"/business"}>
                   <a>회사소식</a>
+                </Link>
+              </div>
+              <div className="flex flex-col space-y-3">
+                <div className="font-bold">RECRUIT</div>
+                <Link href={"/business"}>
+                  <a>채용공고</a>
+                </Link>
+              </div>
+              <div className="flex flex-col space-y-3">
+                <div className="font-bold">CONTACT</div>
+                <Link href={"/contact"}>
+                  <a>온라인문의</a>
                 </Link>
               </div>
             </div>

@@ -1,13 +1,13 @@
 import * as React from "react";
 import { NextPage } from "next";
-import Layout from "../components/layout";
+import Layout from "../../components/layout";
 import Head from "next/head";
 
-const Business: NextPage = () => {
+const Contact: NextPage = () => {
   return (
     <Layout>
       <Head>
-        <title>business</title>
+        <title>Contact</title>
       </Head>
       <div className="flex py-64 bg-slate-500 justify-center">
         <div className="text-white font-bold text-5xl">샘플</div>
@@ -38,4 +38,4 @@ const Business: NextPage = () => {
   );
 };
 
-export default Business;
+export default Contact;

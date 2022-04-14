@@ -20,8 +20,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "netlify-deploy": "next build && next export"
+    "start": "next start"
   },
   "eslintConfig": {
     "extends": [

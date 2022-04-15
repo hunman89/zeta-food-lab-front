@@ -7,7 +7,7 @@ import Image from "next/image";
 
 const Overview: NextPage = () => {
   return (
-    <Layout>
+    <Layout footer>
       <Head>
         <title>overview</title>
       </Head>

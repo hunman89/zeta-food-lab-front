@@ -5,7 +5,7 @@ import Head from "next/head";
 
 const Ceo: NextPage = () => {
   return (
-    <Layout>
+    <Layout footer>
       <Head>
         <title>CEO</title>
       </Head>

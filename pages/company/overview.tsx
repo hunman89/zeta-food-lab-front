@@ -2,7 +2,7 @@ import * as React from "react";
 import { NextPage } from "next";
 import Layout from "../../components/layout";
 import Head from "next/head";
-import Logo from "../../public/logo.png";
+import Logo from "../../public/logos/logo.png";
 import Image from "next/image";
 
 const Overview: NextPage = () => {

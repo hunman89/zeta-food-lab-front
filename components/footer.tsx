@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import simpleLogo from "../public/simpleLogo.png";
+import simpleLogo from "../public/logos/simpleLogo.png";
 
 const Footer = () => {
   return (

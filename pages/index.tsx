@@ -2,16 +2,16 @@ import Footer from "components/footer";
 import { NextPage } from "next";
 import Image from "next/image";
 import Layout from "../components/layout";
-import Intake from "../public/INTAKE_CI_Horizontal_Black.png";
-import Bioneer from "../public/bioneer_logo.jpeg";
-import Sanigen from "../public/Sanigen.png";
-import Okrotea from "../public/Okrotea.png";
-import Ipet from "../public/Ipet.png";
-import SNU from "../public/SNU.png";
-import Kstartup from "../public/k_startup_logo.png";
-import Kgat from "../public/Kgat.png";
-import Hongik from "../public/Hongik.png";
-import DKU from "../public/DKU.png";
+import Intake from "../public/logos/INTAKE_CI_Horizontal_Black.png";
+import Bioneer from "../public/logos/bioneer_logo.jpeg";
+import Sanigen from "../public/logos/Sanigen.png";
+import Okrotea from "../public/logos/Okrotea.png";
+import Ipet from "../public/logos/Ipet.png";
+import SNU from "../public/logos/SNU.png";
+import Kstartup from "../public/logos/k_startup_logo.png";
+import Kgat from "../public/logos/Kgat.png";
+import Hongik from "../public/logos/Hongik.png";
+import DKU from "../public/logos/DKU.png";
 
 const Home: NextPage = () => {
   return (

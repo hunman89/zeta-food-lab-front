@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import Logo from "../public/logo.png";
+import Logo from "../public/logos/logo.png";
 
 const Header = () => {
   return (
@@ -44,7 +44,7 @@ const Header = () => {
                 <Link href={"/business"}>
                   <a>연혁</a>
                 </Link>
-                <Link href={"/business"}>
+                <Link href={"/company/vision"}>
                   <a>비전</a>
                 </Link>
                 <Link href={"/business"}>

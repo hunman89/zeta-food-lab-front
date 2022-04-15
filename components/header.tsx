@@ -17,7 +17,7 @@ const Header = () => {
             <Link href={"/company/overview"}>
               <a>COMPANY</a>
             </Link>
-            <Link href={"/research"}>
+            <Link href={"/research/sensor"}>
               <a>R&D</a>
             </Link>
             <Link href={"/business"}>
@@ -53,13 +53,13 @@ const Header = () => {
               </div>
               <div className="flex flex-col space-y-3">
                 <div className="font-bold">R&D</div>
-                <Link href={"/business"}>
+                <Link href={"/research/sensor"}>
                   <a>현장형 미생물 진단 센서</a>
                 </Link>
-                <Link href={"/business"}>
+                <Link href={"/research/green-tea"}>
                   <a>녹차 발효 음료 개발</a>
                 </Link>
-                <Link href={"/business"}>
+                <Link href={"/research/national-project"}>
                   <a>국가 지원 사업</a>
                 </Link>
               </div>

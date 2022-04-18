@@ -17,7 +17,7 @@ const Home: NextPage = () => {
   return (
     <Layout>
       <div className="snap-y snap-mandatory transition h-screen overflow-scroll scrollbar-hide">
-        <div className="w-full h-screen snap-start">
+        <div className="w-full h-screen snap-start bg-slate-500">
           <div className="py-80 max-w-6xl mx-auto">
             <span className="flex text-2xl font-medium">
               인간의 건강하고 행복한 삶을 위한

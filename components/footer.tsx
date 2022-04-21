@@ -5,7 +5,7 @@ import simpleLogo from "../public/logos/simpleLogo.png";
 const Footer = () => {
   return (
     <div className="w-full h-full bg-cyan-800">
-      <div className="py-40 max-w-5xl mx-auto">
+      <div className="py-24 max-w-5xl mx-auto">
         <div className="flex items-center justify-around gap-3">
           <div className=" w-1/4 text-white font-medium text-2xl">
             <div className="w-24">

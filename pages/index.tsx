@@ -17,26 +17,26 @@ const Home: NextPage = () => {
   return (
     <Layout>
       <div className="snap-y snap-mandatory transition h-screen overflow-scroll scrollbar-hide">
-        <div className="w-full h-screen snap-start bg-slate-500">
-          <div className="py-80 max-w-6xl mx-auto">
-            <span className="flex text-2xl font-medium">
-              인간의 건강하고 행복한 삶을 위한
-            </span>
-            <span className="flex pt-5 text-5xl font-bold">
-              마이크로바이옴 파마바이오틱스 치료제
-            </span>
-            <span className="flex pt-10 text-2xl font-medium">
-              장환경을 재현하는 독자적인 특허기술로
-            </span>
-            <span className="flex pt-5 text-5xl font-bold">
-              개인 맞춤형 헬스케어 솔루션 제공
-            </span>
-            <span className="flex pt-10 text-2xl font-medium">
-              인류의 건강 증진에 기여하기 위해
-            </span>
-            <span className="flex pt-5 text-5xl font-bold">
-              마이크로바이옴 빅데이터 구축
-            </span>
+        <div className="w-full h-screen snap-start bg-slate-300">
+          <div className="flex w-full flex-col py-80 max-w-6xl mx-auto space-y-4 text-5xl font-bold">
+            <div className="flex justify-end">
+              <span className="flex text-white">WE PROVIDE</span>
+            </div>
+            <div className="flex justify-end">
+              <span className="flex text-white">INNOVATIVE SOLUTIONS</span>
+            </div>
+
+            <div className="flex justify-end">
+              <span className="flex text-white">THROUGH OUR</span>
+            </div>
+
+            <div className="flex justify-end">
+              <span className="flex text-white">SPECIALLIZED TECHNOLOGY.</span>
+            </div>
+
+            <div className="flex justify-end">
+              <span className="flex text-[#0053a6]">"SOLUTION(ζ, zeta)"</span>
+            </div>
           </div>
         </div>
         <div className="w-full h-screen bg-blue-600 snap-start">

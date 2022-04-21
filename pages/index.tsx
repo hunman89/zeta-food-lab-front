@@ -132,7 +132,10 @@ const Home: NextPage = () => {
         </div>
         <div className="w-full h-full snap-end">
           <div className="flex flex-col pt-24 max-w-6xl mx-auto">
-            <div className="flex flex-row justify-center pt-20 pb-20">
+            <div className="flex justify-center pt-10">
+              <span className="flex text-5xl font-bold ">PARTNERS</span>
+            </div>
+            <div className="flex flex-row justify-center pt-10 pb-10">
               <span className="flex text-3xl font-medium text-blue-600">
                 ZETA FOOD LAB
               </span>
@@ -187,14 +190,6 @@ const Home: NextPage = () => {
                   layout="responsive"
                   src={SNU}
                   alt="SNU Logo"
-                ></Image>
-              </div>
-              <div className="grid w-full h-12 my-auto">
-                <Image
-                  objectFit="contain"
-                  layout="responsive"
-                  src={Kstartup}
-                  alt="Kstartup Logo"
                 ></Image>
               </div>
               <div className="grid w-full h-12 my-auto">

@@ -8,13 +8,13 @@ import Sanigen from "../public/logos/Sanigen.png";
 import Okrotea from "../public/logos/Okrotea.png";
 import Ipet from "../public/logos/Ipet.png";
 import SNU from "../public/logos/SNU.png";
-import Kstartup from "../public/logos/k_startup_logo.png";
 import Kgat from "../public/logos/Kgat.png";
 import Hongik from "../public/logos/Hongik.png";
 import DKU from "../public/logos/DKU.png";
 import bacteria from "../public/icons/bacteria.png";
 import liquor from "../public/icons/liquor.png";
 import hand from "../public/icons/hand.png";
+import business from "../public/business.png";
 
 const Home: NextPage = () => {
   return (
@@ -127,6 +127,77 @@ const Home: NextPage = () => {
                   </div>
                 </a>
               </div>
+            </div>
+          </div>
+        </div>
+        <div className="w-full h-screen snap-start ">
+          <div className="flex w-full h-full flex-row">
+            <div className="w-2/5 flex flex-col h-full place-content-center px-10">
+              <div className="flex justify-start ">
+                <span className="flex text-6xl font-bold ">BUSINESS</span>
+              </div>
+              <div className="flex flex-col justify-start text-lg">
+                <span className="flex pt-10">
+                  ㈜제타푸드랩은 식품업체의 기술적 문제점을 해결하고자
+                </span>
+                <span className="flex pt-3">
+                  다양한 기술 컨설팅을 제공합니다.
+                </span>
+              </div>
+              <div className="pt-10 flex flex-col justify-start text-gray-700 text-xl font-medium space-y-4">
+                <a
+                  href="/business/consult"
+                  className="group flex hover:animate-bounce"
+                >
+                  <div className=" align-middle pr-3 group-hover:text-[#0053a6]">
+                    HACCP
+                  </div>
+                  <svg
+                    className="w-6 h-6"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M14 5l7 7m0 0l-7 7m7-7H3"
+                    ></path>
+                  </svg>
+                </a>
+                <a
+                  href="/business/consult"
+                  className="group flex hover:animate-bounce"
+                >
+                  <div className=" align-middle pr-3  group-hover:text-[#0053a6]">
+                    지식재산권
+                  </div>
+                  <svg
+                    className="w-6 h-6"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M14 5l7 7m0 0l-7 7m7-7H3"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div className=" w-3/5 h-full -z-10">
+              <Image
+                objectFit="contain"
+                src={business}
+                alt="business"
+                layout="responsive"
+              ></Image>
             </div>
           </div>
         </div>

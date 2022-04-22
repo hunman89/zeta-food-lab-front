@@ -3,7 +3,7 @@ import { NextPage } from "next";
 import Layout from "../../components/layout";
 import Head from "next/head";
 
-const Business: NextPage = () => {
+const Market: NextPage = () => {
   return (
     <Layout footer>
       <Head>
@@ -38,4 +38,4 @@ const Business: NextPage = () => {
   );
 };
 
-export default Business;
+export default Market;

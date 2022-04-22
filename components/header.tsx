@@ -27,7 +27,7 @@ const Header = () => {
               </Link>
             </div>
             <div className="flex w-40 justify-center hover:text-[#0053a6]">
-              <Link href={"/business"}>
+              <Link href={"/business/consult"}>
                 <a>BUSINESS</a>
               </Link>
             </div>
@@ -86,12 +86,12 @@ const Header = () => {
             </div>
             <div className="flex flex-col space-y-3">
               <div className="flex justify-center w-40 hover:text-[#0053a6]">
-                <Link href={"/business"}>
+                <Link href={"/business/consult"}>
                   <a>식품/바이오 컨설팅</a>
                 </Link>
               </div>
               <div className="flex justify-center w-40 hover:text-[#0053a6]">
-                <Link href={"/business"}>
+                <Link href={"/business/market"}>
                   <a>식품 온라인 판매</a>
                 </Link>
               </div>

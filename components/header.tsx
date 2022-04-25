@@ -57,7 +57,7 @@ const Header = () => {
                 </Link>
               </div>
               <div className="flex justify-center w-40 hover:text-[#0053a6]">
-                <Link href={"/business"}>
+                <Link href={"/company/history"}>
                   <a>연혁</a>
                 </Link>
               </div>

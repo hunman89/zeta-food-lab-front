@@ -113,7 +113,7 @@ const Header = () => {
                 </Link>
               </div>
               <div className="flex justify-center w-40 hover:text-[#0053a6]">
-                <Link href={"/business"}>
+                <Link href={"/contact/location"}>
                   <a>오시는 길</a>
                 </Link>
               </div>

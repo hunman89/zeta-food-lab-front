@@ -13,15 +13,18 @@ const Ceo: NextPage = () => {
         <div className="text-white font-bold text-5xl">기업소개</div>
       </div>
       <div className="w-full max-w-6xl mx-auto py-20">
-        <div className="flex justify-around text-2xl text-gray-500">
-          <div className="w-1/3 border-black border-b-2 pb-5 text-center">
-            CEO/CTO
+        <div className="flex justify-center text-2xl px-32 text-gray-500 space-x-5">
+          <div className="w-1/4 border-gray-300 border-b-4 pb-5 text-center font-bold">
+            <a href="/company/overview">기업개요</a>
           </div>
-          <div className="w-1/3 border-gray-300 border-b-2 pb-5 text-center">
-            비전
+          <div className="w-1/4 border-[#0053a6] text-[#0053a6] border-b-4 pb-5 text-center font-bold">
+            CEO
           </div>
-          <div className="w-1/3 border-gray-300 border-b-2 pb-5 text-center">
-            회사연혁
+          <div className="w-1/4 border-gray-300 border-b-4 pb-5 text-center font-bold">
+            <a href="/company/history">연혁</a>
+          </div>
+          <div className="w-1/4 border-gray-300 border-b-4 pb-5 text-center font-bold">
+            <a href="/company/vision">비전</a>
           </div>
         </div>
         <div className="flex flex-row justify-around pt-16">

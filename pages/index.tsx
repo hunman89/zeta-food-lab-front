@@ -19,7 +19,7 @@ import business from "../public/business.png";
 const Home: NextPage = () => {
   return (
     <Layout>
-      <div className="snap-y snap-mandatory transition h-screen overflow-scroll scrollbar-hide">
+      <div className="snap-y snap-mandatory transition-all h-screen overflow-scroll scrollbar-hide">
         <div className="w-full h-screen snap-start bg-slate-300">
           <div className="flex w-full flex-col py-80 max-w-6xl mx-auto space-y-4 text-5xl font-bold">
             <div className="flex justify-end">
@@ -201,7 +201,7 @@ const Home: NextPage = () => {
             </div>
           </div>
         </div>
-        <div className="w-full h-full snap-end">
+        <div className="w-full h-full snap-end bg-white">
           <div className="flex flex-col pt-24 max-w-6xl mx-auto">
             <div className="flex justify-center pt-10">
               <span className="flex text-5xl font-bold ">PARTNERS</span>

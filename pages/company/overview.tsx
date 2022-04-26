@@ -11,9 +11,25 @@ const Overview: NextPage = () => {
       <Head>
         <title>overview</title>
       </Head>
-      <div className="pt-24">
+      <div>
         <div className="flex py-64 bg-slate-500 justify-center">
           <div className="text-white font-bold text-5xl">기업 개요</div>
+        </div>
+      </div>
+      <div className="w-full max-w-6xl mx-auto py-20">
+        <div className="flex justify-center text-2xl px-32 text-gray-500 space-x-5">
+          <div className="w-1/4 border-[#0053a6] text-[#0053a6]  border-b-4 pb-5 text-center font-bold">
+            기업개요
+          </div>
+          <div className="w-1/4 border-gray-300 border-b-4 pb-5 text-center font-bold">
+            <a href="/company/ceo">CEO</a>
+          </div>
+          <div className="w-1/4 border-gray-300 border-b-4 pb-5 text-center font-bold">
+            <a href="/company/history">연혁</a>
+          </div>
+          <div className="w-1/4 border-gray-300 border-b-4 pb-5 text-center font-bold">
+            <a href="/company/vision">비전</a>
+          </div>
         </div>
       </div>
       <div className="flex flex-row w-full max-w-6xl mx-auto py-20 justify-around">

@@ -27,7 +27,7 @@ const Header = () => {
               </Link>
             </div>
             <div className="flex w-40 justify-center hover:text-[#0053a6]">
-              <Link href={"/business/consult"}>
+              <Link href={"/business/haccp-consult"}>
                 <a>BUSINESS</a>
               </Link>
             </div>

@@ -2,7 +2,7 @@ import Footer from "components/footer";
 import { NextPage } from "next";
 import Image from "next/image";
 import Layout from "../components/layout";
-import Intake from "../public/logos/INTAKE_CI_Horizontal_Black.png";
+import Intake from "../public/logos/INTAKE.png";
 import Bioneer from "../public/logos/bioneer_logo.jpeg";
 import Sanigen from "../public/logos/Sanigen.png";
 import Okrotea from "../public/logos/Okrotea.png";

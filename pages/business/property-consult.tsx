@@ -22,7 +22,7 @@ const PropertyConsult: NextPage = () => {
             지식재산권 컨설팅
           </div>
           <div className="w-1/4 border-gray-300 border-b-4 pb-5 text-center font-bold">
-            <a href="/business/market">식품 구매</a>
+            <a href="/business/market">식품 온라인 판매</a>
           </div>
         </div>
         <div className="flex flex-col justify-around pt-20 pb-40">

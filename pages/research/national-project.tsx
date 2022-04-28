@@ -15,7 +15,7 @@ const NationalProject: NextPage = () => {
           <div className="text-white font-bold text-5xl">R&D</div>
         </div>
       </div>
-      <div className="w-full max-w-6xl mx-auto py-20">
+      <div className="w-full max-w-6xl mx-auto pt-20">
         <div className="flex justify-center text-2xl px-32 text-gray-500 space-x-5">
           <div className="w-1/3 border-gray-300 border-b-4 pb-5 text-center font-bold">
             <a href="/research/sensor">현장형 미생물 진단 센서</a>
@@ -28,24 +28,17 @@ const NationalProject: NextPage = () => {
           </div>
         </div>
       </div>
-      <div className="w-full max-w-6xl mx-auto py-20 divide-y-2">
-        <div className="flex justify-center text-3xl text-gray-800 pb-40">
-          국가 지원 사업
-        </div>
-        <div className="flex justify-center text-3xl text-gray-800 py-10">
-          2021
-        </div>
-        <div className="flex flex-col text-2xl text-gray-800 py-10 gap-5">
+      <div className="w-full max-w-6xl mx-auto py-20 ">
+        <div className="flex text-3xl font-bold text-gray-800">2021</div>
+        <div className="flex flex-col text-xl text-gray-800 py-8 gap-5 pl-5">
           <div>▷ 예비 창업 패키지</div>
           <div>▷ 실전 창업 교육</div>
           <div>▷ 메이커스페이스 시제품 제작 지원</div>
           <div>▷ 농식품 벤처 육성 지원사업</div>
           <div>▷ 과학기술분야 R&D 대체인력 활용 지원사업</div>
         </div>
-        <div className="flex justify-center text-3xl text-gray-800 py-10">
-          2022
-        </div>
-        <div className="flex flex-col text-2xl text-gray-800 py-10 gap-5">
+        <div className="flex text-3xl font-bold text-gray-800">2022</div>
+        <div className="flex flex-col text-xl text-gray-800 py-8 gap-5 pl-5">
           <div>▷ 농식품 벤처 육성 지원사업</div>
           <div>▷ 초기 창업 패키지</div>
           <div>▷ 시흥창업센터 시제품 제작 지원사업</div>

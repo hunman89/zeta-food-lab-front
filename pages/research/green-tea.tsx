@@ -16,7 +16,7 @@ const GreenTea: NextPage = () => {
           <div className="text-white font-bold text-5xl">R&D</div>
         </div>
       </div>
-      <div className="w-full max-w-6xl mx-auto py-20">
+      <div className="w-full max-w-6xl mx-auto pt-20">
         <div className="flex justify-center text-2xl px-32 text-gray-500 space-x-5">
           <div className="w-1/3 border-gray-300 border-b-4 pb-5 text-center font-bold">
             <a href="/research/sensor">현장형 미생물 진단 센서</a>
@@ -30,10 +30,10 @@ const GreenTea: NextPage = () => {
         </div>
       </div>
       <div className="w-full max-w-6xl mx-auto py-20 divide-y-2">
-        <div className="flex justify-center text-3xl text-gray-800 pb-40">
+        <div className="flex justify-center text-3xl text-gray-800 pb-20">
           Development Of A Green Tea Fermented Beverage
         </div>
-        <div className="flex flex-col px-24 pt-40 ">
+        <div className="flex flex-col px-24 pt-20 ">
           <Image className="-z-10" quality={20} src={green_tea}></Image>
         </div>
       </div>

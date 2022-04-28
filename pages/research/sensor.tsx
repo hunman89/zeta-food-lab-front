@@ -19,7 +19,7 @@ const Sensor: NextPage = () => {
           <div className="text-white font-bold text-5xl">R&D</div>
         </div>
       </div>
-      <div className="w-full max-w-6xl mx-auto py-20">
+      <div className="w-full max-w-6xl mx-auto pt-20">
         <div className="flex justify-center text-2xl px-32 text-gray-500 space-x-5">
           <div className="w-1/3 border-[#0053a6] text-[#0053a6] border-b-4 pb-5 text-center font-bold">
             현장형 미생물 진단 센서
@@ -33,7 +33,7 @@ const Sensor: NextPage = () => {
         </div>
       </div>
       <div className="w-full max-w-6xl mx-auto py-20 divide-y-2">
-        <div className="flex justify-center text-3xl text-gray-800 pb-40">
+        <div className="flex justify-center text-3xl text-gray-800 pb-20">
           Integrated Colorimetric Biosensor For On-Site Foodborne Pathogen
           Detection
         </div>
@@ -58,7 +58,7 @@ const Sensor: NextPage = () => {
           <Image className="-z-10" quality={10} src={food_preprocessor}></Image>
         </div>
         <div className="flex flex-col px-24 py-20">
-          <span className="text-xl font-bold text-gray-900 pb-14">?</span>
+          <span className="text-xl font-bold text-gray-900 pb-14"></span>
           <Image
             className="-z-10"
             quality={10}

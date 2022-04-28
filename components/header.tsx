@@ -86,7 +86,7 @@ const Header = () => {
             </div>
             <div className="flex flex-col space-y-3">
               <div className="flex justify-center w-40 hover:text-[#0053a6]">
-                <Link href={"/business/consult"}>
+                <Link href={"/business/haccp-consult"}>
                   <a>식품/바이오 컨설팅</a>
                 </Link>
               </div>

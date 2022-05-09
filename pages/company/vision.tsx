@@ -3,7 +3,7 @@ import { NextPage } from "next";
 import Layout from "../../components/layout";
 import Head from "next/head";
 import Image from "next/image";
-import vision from "../../public/vision.png";
+import vision from "../../public/images/vision.png";
 
 const Vision: NextPage = () => {
   return (

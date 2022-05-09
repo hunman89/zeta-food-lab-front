@@ -4,6 +4,7 @@ import Layout from "../../components/layout";
 import Head from "next/head";
 import Logo from "../../public/logos/logo.png";
 import Image from "next/image";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 const Overview: NextPage = () => {
   return (
@@ -64,5 +65,11 @@ const Overview: NextPage = () => {
     </Layout>
   );
 };
+
+export const getStaticProps = async ({ locale }: { locale: string }) => ({
+  props: {
+    ...(await serverSideTranslations(locale, ["common"])),
+  },
+});
 
 export default Overview;

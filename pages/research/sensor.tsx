@@ -3,10 +3,10 @@ import { NextPage } from "next";
 import Layout from "../../components/layout";
 import Head from "next/head";
 import Image from "next/image";
-import switchable_linker from "../../public/RnD/switchable_linker.png";
-import MSK from "../../public/RnD/MSK.png";
-import food_preprocessor from "../../public/RnD/food_preprocessor.png";
-import switchable_linker_roadmap from "../../public/RnD/switchable_linker_roadmap.png";
+import switchable_linker from "../../public/images/RnD/switchable_linker.png";
+import MSK from "../../public/images/RnD/MSK.png";
+import food_preprocessor from "../../public/images/RnD/food_preprocessor.png";
+import switchable_linker_roadmap from "../../public/images/RnD/switchable_linker_roadmap.png";
 
 const Sensor: NextPage = () => {
   return (

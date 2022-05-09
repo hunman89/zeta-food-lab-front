@@ -1,5 +1,6 @@
 import Footer from "components/footer";
 import { NextPage } from "next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Image from "next/image";
 import Layout from "../components/layout";
 import Intake from "../public/logos/INTAKE.png";
@@ -14,11 +15,11 @@ import DKU from "../public/logos/DKU.png";
 import bacteria from "../public/icons/bacteria.png";
 import liquor from "../public/icons/liquor.png";
 import hand from "../public/icons/hand.png";
-import business from "../public/business.png";
+import business from "../public/images/business.png";
 
 const Home: NextPage = () => {
   return (
-    <Layout>
+    <Layout footer>
       <div className="snap-y snap-mandatory transition-all h-screen overflow-scroll scrollbar-hide">
         <div className="w-full h-screen snap-start bg-slate-300">
           <div className="flex w-full flex-col py-80 max-w-6xl mx-auto space-y-4 text-5xl font-bold">
@@ -289,7 +290,6 @@ const Home: NextPage = () => {
               </div>
             </div>
           </div>
-          <Footer></Footer>
         </div>
       </div>
       <style jsx>
@@ -312,5 +312,11 @@ const Home: NextPage = () => {
     </Layout>
   );
 };
+
+export const getStaticProps = async ({ locale }: { locale: string }) => ({
+  props: {
+    ...(await serverSideTranslations(locale, ["common"])),
+  },
+});
 
 export default Home;

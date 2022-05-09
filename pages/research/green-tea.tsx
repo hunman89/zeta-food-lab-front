@@ -3,7 +3,7 @@ import { NextPage } from "next";
 import Layout from "../../components/layout";
 import Head from "next/head";
 import Image from "next/image";
-import green_tea from "../../public/RnD/green_tea.png";
+import green_tea from "../../public/images/RnD/green_tea.png";
 
 const GreenTea: NextPage = () => {
   return (

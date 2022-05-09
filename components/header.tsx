@@ -2,9 +2,10 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import Logo from "../public/logos/logo.png";
-import { i18n } from "next-i18next";
+import { i18n, useTranslation } from "next-i18next";
 
 const Header = () => {
+  const { t } = useTranslation("common");
   const changeKOR = () => {
     i18n?.changeLanguage("ko");
   };
@@ -25,7 +26,7 @@ const Header = () => {
           <div className=" flex space-x-16 h-full items-center text-lg font-bold">
             <div className="flex w-40 justify-center hover:text-[#0053a6]">
               <Link href={"/company/overview"}>
-                <a>COMPANY</a>
+                <a>ABOUT US</a>
               </Link>
             </div>
             <div className="flex w-40 justify-center hover:text-[#0053a6]">
@@ -55,7 +56,7 @@ const Header = () => {
             <div className="flex flex-col space-y-3">
               <div className="flex justify-center w-40 hover:text-[#0053a6]">
                 <Link href={"/company/overview"}>
-                  <a>기업개요</a>
+                  <a>{t("SUBMENU_ABOUT_OVERVIEW")}</a>
                 </Link>
               </div>
               <div className="flex justify-center w-40 hover:text-[#0053a6]">
@@ -65,63 +66,63 @@ const Header = () => {
               </div>
               <div className="flex justify-center w-40 hover:text-[#0053a6]">
                 <Link href={"/company/history"}>
-                  <a>연혁</a>
+                  <a>{t("SUBMENU_ABOUT_HISTORY")}</a>
                 </Link>
               </div>
               <div className="flex justify-center w-40 hover:text-[#0053a6]">
                 <Link href={"/company/vision"}>
-                  <a>비전</a>
+                  <a>{t("SUBMENU_ABOUT_VISION")}</a>
                 </Link>
               </div>
             </div>
             <div className="flex flex-col space-y-3">
               <div className="flex justify-center w-40 hover:text-[#0053a6]">
                 <Link href={"/research/sensor"}>
-                  <a>현장형 미생물 진단 센서</a>
+                  <a>{t("SUBMENU_RND_SENSOR")}</a>
                 </Link>
               </div>
               <div className="flex justify-center w-40 hover:text-[#0053a6]">
                 <Link href={"/research/green-tea"}>
-                  <a>녹차 발효 음료 개발</a>
+                  <a>{t("SUBMENU_RND_GREEN_TEA")}</a>
                 </Link>
               </div>
               <div className="flex justify-center w-40 hover:text-[#0053a6]">
                 <Link href={"/research/national-project"}>
-                  <a>국가 지원 사업</a>
+                  <a>{t("SUBMENU_RND_NATIONAL_PROJECT")}</a>
                 </Link>
               </div>
             </div>
             <div className="flex flex-col space-y-3">
               <div className="flex justify-center w-40 hover:text-[#0053a6]">
                 <Link href={"/business/haccp-consult"}>
-                  <a>식품/바이오 컨설팅</a>
+                  <a>{t("SUBMENU_BUSINESS_CONSULT")}</a>
                 </Link>
               </div>
               <div className="flex justify-center w-40 hover:text-[#0053a6]">
                 <Link href={"/business/market"}>
-                  <a>식품 온라인 판매</a>
+                  <a>{t("SUBMENU_BUSINESS_MATKET")}</a>
                 </Link>
               </div>
             </div>
             <div className="flex flex-col space-y-3">
               <div className="flex justify-center w-40 hover:text-[#0053a6]">
                 <Link href={"/contact"}>
-                  <a>온라인문의</a>
+                  <a>{t("SUBMENU_CONTACT_CONTACT")}</a>
                 </Link>
               </div>
               <div className="flex justify-center w-40 hover:text-[#0053a6]">
                 <Link href={"/business"}>
-                  <a>회사소식</a>
+                  <a>{t("SUBMENU_CONTACT_NEWS")}</a>
                 </Link>
               </div>
               <div className="flex justify-center w-40 hover:text-[#0053a6]">
                 <Link href={"/business"}>
-                  <a>채용공고</a>
+                  <a>{t("SUBMENU_CONTACT_JOB")}</a>
                 </Link>
               </div>
               <div className="flex justify-center w-40 hover:text-[#0053a6]">
                 <Link href={"/contact/location"}>
-                  <a>오시는 길</a>
+                  <a>{t("SUBMENU_CONTACT_LOCATION")}</a>
                 </Link>
               </div>
             </div>

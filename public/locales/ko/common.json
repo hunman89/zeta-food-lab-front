@@ -1,6 +1,20 @@
 {
   "PHONE": "대표전화",
   "EMAIL": "이메일",
+
   "ZETA_NAME": "주식회사 제타푸드랩",
-  "ZETA_ADDRESS": "경기도 시흥시 배곧2로 82, 서울대학교 시흥캠퍼스 미래모빌리티동 602호"
+  "ZETA_ADDRESS": "경기도 시흥시 배곧2로 82, 서울대학교 시흥캠퍼스 미래모빌리티동 602호",
+
+  "SUBMENU_ABOUT_OVERVIEW": "기업 소개",
+  "SUBMENU_ABOUT_HISTORY": "연혁",
+  "SUBMENU_ABOUT_VISION": "비전",
+  "SUBMENU_RND_SENSOR": "미생물 신속 스크리닝",
+  "SUBMENU_RND_GREEN_TEA": "녹차 발효 음료",
+  "SUBMENU_RND_NATIONAL_PROJECT": "국가 지원 사업",
+  "SUBMENU_BUSINESS_CONSULT": "기술 컨설팅",
+  "SUBMENU_BUSINESS_MATKET": "온라인 판매",
+  "SUBMENU_CONTACT_CONTACT": "문의",
+  "SUBMENU_CONTACT_NEWS": "회사 소식",
+  "SUBMENU_CONTACT_JOB": "채용",
+  "SUBMENU_CONTACT_LOCATION": "오시는길"
 }

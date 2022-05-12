@@ -2,16 +2,11 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import Logo from "../public/logos/logo.png";
-import { i18n, useTranslation } from "next-i18next";
+import { useTranslation } from "next-i18next";
 
 const Header = () => {
   const { t } = useTranslation("common");
-  const changeKOR = () => {
-    i18n?.changeLanguage("ko");
-  };
-  const changeENG = () => {
-    i18n?.changeLanguage("en");
-  };
+
   return (
     <div>
       <div className="group flex fixed h-20 w-full bg-white">
@@ -46,9 +41,13 @@ const Header = () => {
             </div>
           </div>
           <div className="flex flex-row space-x-2 w-40 justify-center">
-            <a onClick={changeKOR}>KOR</a>
+            <Link href="/" locale="ko">
+              <button>KOR</button>
+            </Link>
             <div>|</div>
-            <a onClick={changeENG}>ENG</a>
+            <Link href="/" locale="en">
+              <button>ENG</button>
+            </Link>
           </div>
         </div>
         <div className="transition-all group-hover:visible invisible right-0 fixed w-full top-20 px-10 pb-64 border-none bg-gradient-to-b from-white to-transparent">
@@ -108,16 +107,6 @@ const Header = () => {
               <div className="flex justify-center w-40 hover:text-[#0053a6]">
                 <Link href={"/contact"}>
                   <a>{t("SUBMENU_CONTACT_CONTACT")}</a>
-                </Link>
-              </div>
-              <div className="flex justify-center w-40 hover:text-[#0053a6]">
-                <Link href={"/business"}>
-                  <a>{t("SUBMENU_CONTACT_NEWS")}</a>
-                </Link>
-              </div>
-              <div className="flex justify-center w-40 hover:text-[#0053a6]">
-                <Link href={"/business"}>
-                  <a>{t("SUBMENU_CONTACT_JOB")}</a>
                 </Link>
               </div>
               <div className="flex justify-center w-40 hover:text-[#0053a6]">

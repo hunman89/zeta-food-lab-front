@@ -7,7 +7,7 @@ const Footer = () => {
   const { t } = useTranslation("common");
   return (
     <div className="w-full h-full bg-slate-200">
-      <div className="p-10">
+      <div className="p-20">
         <div className="flex items-center justify-around gap-3 h-full">
           <div className="flex flex-col w-1/5">
             <div className="w-40">

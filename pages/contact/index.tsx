@@ -2,40 +2,47 @@ import * as React from "react";
 import { NextPage } from "next";
 import Layout from "../../components/layout";
 import Head from "next/head";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from "next-i18next";
+import Image from "next/image";
+import contact from "../../public/images/contact.jpg";
 
 const Contact: NextPage = () => {
+  const { t } = useTranslation("contact");
   return (
     <Layout footer>
       <Head>
         <title>Contact</title>
       </Head>
-      <div className="flex py-64 bg-slate-500 justify-center">
-        <div className="text-white font-bold text-5xl">샘플</div>
+      <div className="flex w-full max-w-6xl mx-auto pt-40 justify-center">
+        <div className=" font-bold text-5xl">{t("CONTACT_HEADER")}</div>
       </div>
-      <div className="w-full max-w-6xl mx-auto py-20">
-        <div className="flex justify-around text-2xl text-gray-500">
-          <div className="w-1/3 border-black border-b-2 pb-5 text-center">
-            sub1
+      <div className="w-full max-w-6xl mx-auto py-32">
+        <div className="flex flex-row space-x-5">
+          <div className="w-96 items-center">
+            <Image className=" rounded-full object-cover" src={contact}></Image>
           </div>
-          <div className="w-1/3 border-gray-300 border-b-2 pb-5 text-center">
-            sub2
-          </div>
-          <div className="w-1/3 border-gray-300 border-b-2 pb-5 text-center">
-            sub3
-          </div>
-        </div>
-        <div className="flex flex-row justify-around pt-16">
-          <div className="flex flex-col">
-            <div className=" h-72 bg-slate-500 aspect-square rounded-xl"></div>
-            <p className="text-3xl font-medium text-center pt-5">CEO 한정우</p>
-          </div>
-          <div className="flex flex-col">
-            <div className=" h-72 bg-slate-500 aspect-square rounded-xl"></div>
+          <div className="flex flex-col justify-center px-16">
+            <div className="text-xl text-gray-700">{t("CONTACT_BODY")}</div>
+            <div className="py-4 text-gray-900 font-bold">
+              zetafoodlab@gmail.com
+            </div>
+            <div>
+              <a href="mailto:zetafoodlab@gmail.com" className=" border-2 p-1">
+                {t("CONTACT_BUTTON")}
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </Layout>
   );
 };
+
+export const getStaticProps = async ({ locale }: { locale: string }) => ({
+  props: {
+    ...(await serverSideTranslations(locale, ["contact", "common"])),
+  },
+});
 
 export default Contact;

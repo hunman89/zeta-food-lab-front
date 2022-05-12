@@ -2,43 +2,74 @@ import * as React from "react";
 import { NextPage } from "next";
 import Layout from "../../components/layout";
 import Head from "next/head";
+import { useTranslation } from "next-i18next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useEffect, useState } from "react";
+declare global {
+  interface Window {
+    kakao: any;
+    daum: any;
+  }
+}
 
 const Location: NextPage = () => {
+  const { t } = useTranslation("contact");
+  const [mapLoaded, setMapLoaded] = useState<boolean>(false);
+
+  useEffect(() => {
+    const $script = document.createElement("script");
+    $script.src = `//dapi.kakao.com/v2/maps/sdk.js?appkey=${process.env.NEXT_PUBLIC_KAKAO_MAP_KEY}&autoload=false`;
+    $script.addEventListener("load", () => setMapLoaded(true));
+    document.head.appendChild($script);
+  }, []);
+
+  useEffect(() => {
+    if (!mapLoaded) return;
+
+    window.kakao.maps.load(() => {
+      const container = document.getElementById("map");
+      const options = {
+        center: new window.kakao.maps.LatLng(37.366303, 126.724942),
+        level: 4,
+      };
+
+      const map = new window.kakao.maps.Map(container, options);
+      var zoomControl = new window.kakao.maps.ZoomControl();
+      map.addControl(zoomControl, window.kakao.maps.ControlPosition.RIGHT);
+      var markerPosition = new window.kakao.maps.LatLng(37.366303, 126.724942);
+
+      var marker = new window.kakao.maps.Marker({
+        position: markerPosition,
+      });
+      marker.setMap(map);
+    });
+  }, [mapLoaded]);
+
   return (
     <Layout footer>
       <Head>
         <title>Location</title>
       </Head>
-      <div className="flex py-64 bg-slate-500 justify-center">
-        <div className="text-white font-bold text-5xl">오시는길</div>
+      <div className="flex w-full max-w-6xl mx-auto pt-40 ">
+        <div className=" font-bold text-5xl">{t("LOCATION_HEADER")}</div>
       </div>
-      <div className="w-full max-w-6xl mx-auto py-20">
-        <div className="flex justify-around text-2xl text-gray-500">
-          <div className="w-1/3  border-gray-300  border-b-2 pb-5 text-center">
-            CEO/CTO
-          </div>
-          <div className="w-1/3 border-gray-300 border-b-2 pb-5 text-center">
-            비전
-          </div>
-          <div className="w-1/3 border-black border-b-2 pb-5 text-center">
-            회사연혁
-          </div>
-        </div>
+      <div className="w-full max-w-6xl mx-auto pb-20">
         <div className="flex flex-col pt-24">
-          <div className="text-2xl font-bold">주소</div>
-          <div className="text-gray-600 pt-4 pb-10">
-            경기도 시흥시 배곧2로 82 서울대학교 시흥캠퍼스 미래모빌리티동 602호
-          </div>
+          <div className="text-2xl font-bold">{t("HEAD_OFFICE")}</div>
+          <div className="text-gray-600 pt-4 pb-10">{t("LOCATION_OFFICE")}</div>
           <div className="pt-10 border-t-2 border-gray-400">
-            전화번호: 010-9321-0649 (대표)
-          </div>
-          <div className="pt-24 ">
-            <div className="bg-gray-500 h-72 aspect-video"></div>
+            <div id="map" style={{ width: "640px", height: "360px" }}></div>
           </div>
         </div>
       </div>
     </Layout>
   );
 };
+
+export const getStaticProps = async ({ locale }: { locale: string }) => ({
+  props: {
+    ...(await serverSideTranslations(locale, ["contact", "common"])),
+  },
+});
 
 export default Location;

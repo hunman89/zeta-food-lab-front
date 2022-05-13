@@ -2,6 +2,7 @@ import * as React from "react";
 import { NextPage } from "next";
 import Layout from "../../components/layout";
 import Head from "next/head";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 const History: NextPage = () => {
   return (
@@ -110,5 +111,11 @@ const History: NextPage = () => {
     </Layout>
   );
 };
+
+export const getStaticProps = async ({ locale }: { locale: string }) => ({
+  props: {
+    ...(await serverSideTranslations(locale, ["common"])),
+  },
+});
 
 export default History;

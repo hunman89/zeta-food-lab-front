@@ -7,6 +7,7 @@ import switchable_linker from "../../public/images/RnD/switchable_linker.png";
 import MSK from "../../public/images/RnD/MSK.png";
 import food_preprocessor from "../../public/images/RnD/food_preprocessor.png";
 import switchable_linker_roadmap from "../../public/images/RnD/switchable_linker_roadmap.png";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 const Sensor: NextPage = () => {
   return (
@@ -69,5 +70,11 @@ const Sensor: NextPage = () => {
     </Layout>
   );
 };
+
+export const getStaticProps = async ({ locale }: { locale: string }) => ({
+  props: {
+    ...(await serverSideTranslations(locale, ["common"])),
+  },
+});
 
 export default Sensor;

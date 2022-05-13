@@ -8,6 +8,7 @@ import Link from "next/link";
 import naverShop from "../../public/logos/navershop.png";
 import coupang from "../../public/logos/coupang.png";
 import kakao from "../../public/logos/kakao.png";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 const Market: NextPage = () => {
   return (
@@ -94,5 +95,11 @@ const Market: NextPage = () => {
     </Layout>
   );
 };
+
+export const getStaticProps = async ({ locale }: { locale: string }) => ({
+  props: {
+    ...(await serverSideTranslations(locale, ["common"])),
+  },
+});
 
 export default Market;

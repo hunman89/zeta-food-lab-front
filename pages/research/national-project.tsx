@@ -3,6 +3,7 @@ import { NextPage } from "next";
 import Layout from "../../components/layout";
 import Head from "next/head";
 import Image from "next/image";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 const NationalProject: NextPage = () => {
   return (
@@ -49,5 +50,11 @@ const NationalProject: NextPage = () => {
     </Layout>
   );
 };
+
+export const getStaticProps = async ({ locale }: { locale: string }) => ({
+  props: {
+    ...(await serverSideTranslations(locale, ["common"])),
+  },
+});
 
 export default NationalProject;

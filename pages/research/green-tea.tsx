@@ -4,6 +4,7 @@ import Layout from "../../components/layout";
 import Head from "next/head";
 import Image from "next/image";
 import green_tea from "../../public/images/RnD/green_tea.png";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 const GreenTea: NextPage = () => {
   return (
@@ -40,5 +41,11 @@ const GreenTea: NextPage = () => {
     </Layout>
   );
 };
+
+export const getStaticProps = async ({ locale }: { locale: string }) => ({
+  props: {
+    ...(await serverSideTranslations(locale, ["common"])),
+  },
+});
 
 export default GreenTea;

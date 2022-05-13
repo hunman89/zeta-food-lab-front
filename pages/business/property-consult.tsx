@@ -1,6 +1,7 @@
 import Layout from "../../components/layout";
 import Head from "next/head";
 import { NextPage } from "next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 const PropertyConsult: NextPage = () => {
   return (
@@ -39,5 +40,11 @@ const PropertyConsult: NextPage = () => {
     </Layout>
   );
 };
+
+export const getStaticProps = async ({ locale }: { locale: string }) => ({
+  props: {
+    ...(await serverSideTranslations(locale, ["common"])),
+  },
+});
 
 export default PropertyConsult;

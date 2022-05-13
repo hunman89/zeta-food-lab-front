@@ -90,7 +90,7 @@ const Overview: NextPage = () => {
         </div>
         <div className="flex flex-col text-lg font-medium space-y-1">
           <div className="flex justify-center">
-            <p className="flex text-[#003873]">{t("ZETA_NAME_SIMPLE")}</p>
+            <p className="flex text-[#003873]">{t("ZETA_NAME_SIMPLE")}</p>&nbsp;
             {t("OVERVIEW_DESCRIPTION_1")}
           </div>
           <div className="flex justify-center">

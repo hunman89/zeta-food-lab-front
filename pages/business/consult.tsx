@@ -4,7 +4,7 @@ import { NextPage } from "next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 
-const HaccpConsult: NextPage = () => {
+const Consult: NextPage = () => {
   const { t } = useTranslation("business");
   return (
     <Layout footer>
@@ -150,4 +150,4 @@ export const getStaticProps = async ({ locale }: { locale: string }) => ({
   },
 });
 
-export default HaccpConsult;
+export default Consult;

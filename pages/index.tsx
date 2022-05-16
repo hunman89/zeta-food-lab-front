@@ -169,7 +169,7 @@ const Home: NextPage = () => {
                   </svg>
                 </a>
                 <a
-                  href="/business/consult"
+                  href="/business/consult#IPRs"
                   className="group flex hover:animate-bounce"
                 >
                   <div className=" align-middle pr-3  group-hover:text-[#0053a6]">

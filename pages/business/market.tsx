@@ -8,6 +8,7 @@ import Link from "next/link";
 import naverShop from "../../public/logos/navershop.png";
 import coupang from "../../public/logos/coupang.png";
 import kakao from "../../public/logos/kakao.png";
+import sanrim from "../../public/logos/sanrim.png";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 const Market: NextPage = () => {
@@ -85,6 +86,18 @@ const Market: NextPage = () => {
                     objectFit="cover"
                     src={kakao}
                     alt="kakao Logo"
+                  ></Image>
+                </div>
+              </a>
+            </Link>
+            <Link href="https://www.sanrim.com/shop/search.php?q=%ED%99%94%EA%B0%9C%EC%A0%9C%EB%8B%A4">
+              <a target="_blank">
+                <div className="grid w-full my-auto">
+                  <Image
+                    layout="responsive"
+                    objectFit="cover"
+                    src={sanrim}
+                    alt="sanrim Logo"
                   ></Image>
                 </div>
               </a>

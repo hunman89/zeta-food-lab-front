@@ -3,8 +3,11 @@ import { NextPage } from "next";
 import Layout from "../../components/layout";
 import Head from "next/head";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import HistoryCard from "components/historyCard";
+import { useTranslation } from "next-i18next";
 
 const History: NextPage = () => {
+  const { t } = useTranslation("company");
   return (
     <Layout footer>
       <Head>
@@ -29,83 +32,37 @@ const History: NextPage = () => {
           </div>
         </div>
         <div className="flex flex-col pt-24 text-xl">
-          <div className="flex w-full divide-x-4">
-            <div className="flex flex-col w-1/2">
-              <div className="pt-10 text-right pr-10">
-                <div className="font-bold text-[#0053a6]">2021.09.01.</div>
-                ㈜제타푸드랩 법인 설립
-              </div>
-            </div>
-            <div className="flex flex-col w-1/2">
-              <div className="mt-10 -ml-2.5 rounded-full border-none bg-[#0053a6] w-4 aspect-square"></div>
-            </div>
-          </div>
-          <div className="flex w-full divide-x-4">
-            <div className="flex flex-col w-1/2 items-end">
-              <div className="mt-10 -mr-2.5 rounded-full border-none bg-[#0053a6] w-4 aspect-square"></div>
-            </div>
-            <div className="flex flex-col w-1/2 -z-10">
-              <div className="pt-10 pl-10">
-                <div className="font-bold text-[#0053a6]">2021.09.02.</div>
-                서울대학교 산학협력단 산업 자문 계약 체결
-              </div>
-            </div>
-          </div>
-          <div className="flex w-full divide-x-4">
-            <div className="flex flex-col w-1/2">
-              <div className="pt-10 text-right pr-10">
-                <div className="font-bold text-[#0053a6]">2021.09.03.</div>
-                SNU 시흥 바이오스타트업 조성 사업 과제 참여
-              </div>
-            </div>
-            <div className="flex flex-col w-1/2">
-              <div className="mt-10 -ml-2.5 rounded-full border-none bg-[#0053a6] w-4 aspect-square"></div>
-            </div>
-          </div>
-          <div className="flex w-full divide-x-4">
-            <div className="flex flex-col w-1/2 items-end">
-              <div className="mt-10 -mr-2.5 rounded-full border-none bg-[#0053a6] w-4 aspect-square"></div>
-            </div>
-            <div className="flex flex-col w-1/2 -z-10">
-              <div className="pt-10 pl-10">
-                <div className="font-bold text-[#0053a6]">2021.10.01.</div>
-                서울대학교 시흥캠퍼스 연구소 입주
-              </div>
-            </div>
-          </div>
-          <div className="flex w-full divide-x-4">
-            <div className="flex flex-col w-1/2">
-              <div className="pt-10 text-right pr-10">
-                <div className="font-bold text-[#0053a6]">2021.10.01.</div>
-                화개제다 기술 자문 컨설팅 계약 체결
-              </div>
-            </div>
-            <div className="flex flex-col w-1/2">
-              <div className="mt-10 -ml-2.5 rounded-full border-none bg-[#0053a6] w-4 aspect-square"></div>
-            </div>
-          </div>
-          <div className="flex w-full divide-x-4">
-            <div className="flex flex-col w-1/2 items-end z-10">
-              <div className="mt-10 -mr-2.5 rounded-full border-none bg-[#0053a6] w-4 aspect-square"></div>
-            </div>
-            <div className="flex flex-col w-1/2 -z-10">
-              <div className="pt-10 pl-10">
-                <div className="font-bold text-[#0053a6]">2021.10.19.</div>
-                화개제다 온라인 판매권 위탁 계약 체결
-              </div>
-            </div>
-          </div>
-          <div className="flex w-full divide-x-4">
-            <div className="flex flex-col w-1/2">
-              <div className="pt-10 text-right pr-10">
-                <div className="font-bold text-[#0053a6]">2021.12.01.</div>
-                황금이삭 기술 자문 컨설팅 계약 체결
-              </div>
-            </div>
-            <div className="flex flex-col w-1/2">
-              <div className="mt-10 -ml-2.5 rounded-full border-none bg-[#0053a6] w-4 aspect-square"></div>
-            </div>
-          </div>
+          <HistoryCard name={t("HISTORY_2021_09_01")} date="2021.09." />
+          <HistoryCard
+            name={t("HISTORY_2021_09_02")}
+            date="2021.09."
+            right={true}
+          />
+          <HistoryCard name={t("HISTORY_2021_09_03")} date="2021.09." />
+          <HistoryCard
+            name={t("HISTORY_2021_10_01")}
+            date="2021.10."
+            right={true}
+          />
+          <HistoryCard name={t("HISTORY_2021_10_02")} date="2021.10." />
+          <HistoryCard
+            name={t("HISTORY_2021_10_03")}
+            date="2021.10."
+            right={true}
+          />
+          <HistoryCard name={t("HISTORY_2021_12_01")} date="2021.12." />
+          <HistoryCard
+            name={t("HISTORY_2022_01_01")}
+            date="2022.01."
+            right={true}
+          />
+          <HistoryCard name={t("HISTORY_2022_01_02")} date="2022.01." />
+          <HistoryCard
+            name={t("HISTORY_2022_03_01")}
+            date="2022.03."
+            right={true}
+          />
+          <HistoryCard name={t("HISTORY_2022_04_01")} date="2022.04." />
         </div>
       </div>
     </Layout>
@@ -114,7 +71,7 @@ const History: NextPage = () => {
 
 export const getStaticProps = async ({ locale }: { locale: string }) => ({
   props: {
-    ...(await serverSideTranslations(locale, ["common"])),
+    ...(await serverSideTranslations(locale, ["common", "company"])),
   },
 });
 

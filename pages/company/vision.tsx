@@ -26,13 +26,13 @@ const Vision: NextPage = () => {
           <div className="w-1/4 border-gray-300 border-b-4 pb-5 text-center font-bold">
             <a href="/company/history">연혁</a>
           </div>
-          <div className="w-1/4 border-[#0053a6] text-[#0053a6] border-b-4 pb-5 text-center font-bold">
+          <div className="w-1/4 border-zetalight text-zetalight border-b-4 pb-5 text-center font-bold">
             비전
           </div>
         </div>
         <div className="flex justify-center text-3xl text-gray-500 py-20">
           "우리가 걸어갈 길은&nbsp;
-          <span className="text-blue-700">신속 스크리닝 기술 개발</span>의
+          <span className="text-zetalight">신속 스크리닝 기술 개발</span>의
           새로운 길이 됩니다"
         </div>
         <div className="flex flex-row justify-around py-20 px-24">

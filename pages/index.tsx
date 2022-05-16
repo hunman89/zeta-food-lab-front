@@ -36,7 +36,7 @@ const Home: NextPage = () => {
               <span className="flex text-white">SPECIALLIZED TECHNOLOGY.</span>
             </div>
             <div className="flex justify-end">
-              <span className="flex text-[#0053a6] textDown">
+              <span className="flex text-zetalight textDown">
                 "SOLUTION(ζ, zeta)"
               </span>
             </div>
@@ -84,7 +84,7 @@ const Home: NextPage = () => {
                   </div>
                 </a>
               </div>
-              <div className=" bg-sky-700 w-1/3 ease-in-out transition duration-300 opacity-50 hover:opacity-100 hover:scale-110">
+              <div className=" bg-blue-900 w-1/3 ease-in-out transition duration-300 opacity-50 hover:opacity-100 hover:scale-110">
                 <a href="/research/green-tea">
                   <div className="p-10 font-medium text-xl text-center">
                     녹차 발효 음료 개발

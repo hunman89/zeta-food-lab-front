@@ -6,6 +6,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import Image from "next/image";
 import contact from "../../public/images/contact.jpg";
+import ContactSub from "components/contactSub";
 
 const Contact: NextPage = () => {
   const { t } = useTranslation("contact");
@@ -14,9 +15,7 @@ const Contact: NextPage = () => {
       <Head>
         <title>Contact</title>
       </Head>
-      <div className="flex w-full max-w-6xl mx-auto pt-40 justify-center">
-        <div className=" font-bold text-5xl">{t("CONTACT_HEADER")}</div>
-      </div>
+      <ContactSub position={0} />
       <div className="w-full max-w-6xl mx-auto py-32">
         <div className="flex flex-row space-x-5">
           <div className="w-96 items-center">
@@ -28,7 +27,10 @@ const Contact: NextPage = () => {
               zetafoodlab@gmail.com
             </div>
             <div>
-              <a href="mailto:zetafoodlab@gmail.com" className=" border-2 p-1">
+              <a
+                href="mailto:zetafoodlab@gmail.com"
+                className=" border-none p-2 bg-zetalight text-white"
+              >
                 {t("CONTACT_BUTTON")}
               </a>
             </div>

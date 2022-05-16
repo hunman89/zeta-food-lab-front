@@ -5,6 +5,7 @@ import Head from "next/head";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useEffect, useState } from "react";
+import ContactSub from "components/contactSub";
 declare global {
   interface Window {
     kakao: any;
@@ -50,9 +51,7 @@ const Location: NextPage = () => {
       <Head>
         <title>Location</title>
       </Head>
-      <div className="flex w-full max-w-6xl mx-auto pt-40 ">
-        <div className=" font-bold text-5xl">{t("LOCATION_HEADER")}</div>
-      </div>
+      <ContactSub position={1} />
       <div className="w-full max-w-6xl mx-auto pb-20">
         <div className="flex flex-col pt-24">
           <div className="text-2xl font-bold">{t("HEAD_OFFICE")}</div>

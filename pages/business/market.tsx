@@ -10,6 +10,7 @@ import coupang from "../../public/logos/coupang.png";
 import kakao from "../../public/logos/kakao.png";
 import sanrim from "../../public/logos/sanrim.png";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import BusinessSub from "components/businessSub";
 
 const Market: NextPage = () => {
   return (
@@ -17,21 +18,8 @@ const Market: NextPage = () => {
       <Head>
         <title>business</title>
       </Head>
-      <div className="flex py-64 bg-slate-500 justify-center">
-        <div className="text-white font-bold text-5xl">식품 온라인 판매</div>
-      </div>
+      <BusinessSub position={1} />
       <div className="w-full max-w-6xl mx-auto py-20">
-        <div className="flex justify-center text-2xl px-32 text-gray-500 space-x-5">
-          <div className="w-1/4 border-gray-300 border-b-4 pb-5 text-center font-bold">
-            <a href="/business/haccp-consult">HACCP 컨설팅</a>
-          </div>
-          <div className="w-1/4 border-gray-300 border-b-4 pb-5 text-center font-bold">
-            <a href="/business/property-consult">지식재산권 컨설팅</a>
-          </div>
-          <div className="w-1/4 border-[#0053a6] text-[#0053a6] border-b-4 pb-5 text-center font-bold">
-            식품 온라인 판매
-          </div>
-        </div>
         <div className="flex flex-col justify-around pt-20">
           <div className="text-xl pb-20 border-b-2">
             63년 전통의 명인차 브랜드인 화개제다의 차류 제품을 온라인 위탁

@@ -3,6 +3,7 @@ import Head from "next/head";
 import { NextPage } from "next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
+import BusinessSub from "components/businessSub";
 
 const Consult: NextPage = () => {
   const { t } = useTranslation("business");
@@ -11,23 +12,8 @@ const Consult: NextPage = () => {
       <Head>
         <title>Consult</title>
       </Head>
-      <div className="flex py-64 bg-slate-500 justify-center">
-        <div className="text-white font-bold text-5xl">
-          식품 / 바이오 컨설팅
-        </div>
-      </div>
+      <BusinessSub position={0} />
       <div className="w-full max-w-6xl mx-auto py-20">
-        <div className="flex justify-center text-2xl px-32 text-gray-500 space-x-5">
-          <div className="w-1/4 border-[#0053a6] text-[#0053a6] border-b-4 pb-5 text-center font-bold">
-            HACCP 컨설팅
-          </div>
-          <div className="w-1/4 border-gray-300 border-b-4 pb-5 text-center font-bold">
-            <a href="#IPRs">지식재산권 컨설팅</a>
-          </div>
-          <div className="w-1/4 border-gray-300 border-b-4 pb-5 text-center font-bold">
-            <a href="/business/market">식품 온라인 판매</a>
-          </div>
-        </div>
         <div className="flex flex-col pt-20">
           <div className="text-3xl font-bold pb-40">
             {t("CONSULT_HACCP_HEAD")}

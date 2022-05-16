@@ -99,7 +99,7 @@ const Header = () => {
               </div>
               <div className="flex w-40 hover:text-[#0053a6]">
                 <Link href={"/business/market"}>
-                  <a>{t("SUBMENU_BUSINESS_MATKET")}</a>
+                  <a>{t("SUBMENU_BUSINESS_MARKET")}</a>
                 </Link>
               </div>
             </div>

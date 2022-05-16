@@ -4,6 +4,7 @@ import Layout from "../../components/layout";
 import Head from "next/head";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
+import CompanySub from "components/companySub";
 
 const Vision: NextPage = () => {
   const { t } = useTranslation("company");
@@ -12,24 +13,8 @@ const Vision: NextPage = () => {
       <Head>
         <title>vision</title>
       </Head>
-      <div className="flex py-64 bg-slate-500 justify-center">
-        <div className="text-white font-bold text-5xl">비전</div>
-      </div>
+      <CompanySub position={3} />
       <div className="w-full max-w-6xl mx-auto py-20">
-        <div className="flex justify-center text-2xl px-32 text-gray-500 space-x-5">
-          <div className="w-1/4 border-gray-300 border-b-4 pb-5 text-center font-bold">
-            <a href="/company/overview">기업개요</a>
-          </div>
-          <div className="w-1/4 border-gray-300 border-b-4 pb-5 text-center font-bold">
-            <a href="/company/ceo">CEO</a>
-          </div>
-          <div className="w-1/4 border-gray-300 border-b-4 pb-5 text-center font-bold">
-            <a href="/company/history">연혁</a>
-          </div>
-          <div className="w-1/4 border-zetalight text-zetalight border-b-4 pb-5 text-center font-bold">
-            비전
-          </div>
-        </div>
         <div className="flex justify-center font-medium text-3xl text-gray-500 py-20">
           {t("VISION_MAIN_01")}&nbsp;
           <span className="text-zetalight">{t("VISION_MAIN_02")}&nbsp;</span>

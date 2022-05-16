@@ -6,6 +6,7 @@ import Logo from "../../public/logos/logo.png";
 import Image from "next/image";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
+import CompanySub from "components/companySub";
 
 const Overview: NextPage = () => {
   const { t } = useTranslation("company");
@@ -14,34 +15,14 @@ const Overview: NextPage = () => {
       <Head>
         <title>overview</title>
       </Head>
-      <div>
-        <div className="flex py-64 bg-slate-500 justify-center">
-          <div className="text-white font-bold text-5xl">기업 개요</div>
-        </div>
-      </div>
-      <div className="w-full max-w-6xl mx-auto py-20">
-        <div className="flex justify-center text-2xl px-20 text-gray-500 space-x-5">
-          <div className="w-1/4 border-[#0053a6] text-[#0053a6]  border-b-4 pb-5 text-center font-bold">
-            기업개요
-          </div>
-          <div className="w-1/4 border-gray-300 border-b-4 pb-5 text-center font-bold">
-            <a href="/company/ceo">CEO</a>
-          </div>
-          <div className="w-1/4 border-gray-300 border-b-4 pb-5 text-center font-bold">
-            <a href="/company/history">연혁</a>
-          </div>
-          <div className="w-1/4 border-gray-300 border-b-4 pb-5 text-center font-bold">
-            <a href="/company/vision">비전</a>
-          </div>
-        </div>
-      </div>
-      <div className="flex flex-col w-full max-w-6xl mx-auto py-20 justify-around space-y-20">
+      <CompanySub position={0} />
+      <div className="flex flex-col w-full max-w-6xl mx-auto py-40 justify-around space-y-20">
         <div className="flex justify-center">
           <p className=" text-gray-900 font-medium text-5xl">
             “ ZETA = SOLUTION (ζ) ”
           </p>
         </div>
-        <div className="flex flex-row justify-center space-x-2 items-center">
+        <div className="flex flex-row justify-center space-x-2 items-center pt-20">
           <div className="flex  aspect-square h-64 rounded-full justify-center border-2 border-[#003873]">
             <div className=" text-3xl my-auto text-center">
               {t("OVERVIEW_DEVELOP")}

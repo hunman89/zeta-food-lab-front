@@ -15,11 +15,11 @@ import DKU from "../public/logos/DKU.png";
 import bacteria from "../public/icons/bacteria.png";
 import liquor from "../public/icons/liquor.png";
 import hand from "../public/icons/hand.png";
-import business from "../public/images/business.png";
+import business from "../public/images/business.jpg";
 
 const Home: NextPage = () => {
   return (
-    <Layout footer>
+    <Layout>
       <div className="snap-y snap-mandatory transition-all h-screen overflow-scroll scrollbar-hide">
         <div className="w-full h-screen snap-start bg-slate-300">
           <div className="flex w-full flex-col py-80 max-w-6xl mx-auto space-y-4 text-5xl font-bold">
@@ -42,12 +42,12 @@ const Home: NextPage = () => {
             </div>
           </div>
         </div>
-        <div className="w-full h-screen bg-slate-300 snap-start">
-          <div className="py-40 max-w-6xl mx-auto text-white">
+        <div className="w-full h-screen bg-slate-500 snap-start">
+          <div className=" pt-52 max-w-6xl mx-auto text-white">
             <div className="flex justify-center">
               <span className="flex text-6xl font-medium">R&D</span>
             </div>
-            <div className="flex flex-col text-xl font-medium pt-5">
+            <div className="flex flex-col text-xl font-medium pt-10">
               <div className="flex justify-center">
                 <span className="flex ">
                   ㈜제타푸드랩만의 비색반응을 이용한 바이오센서 기술 및 발효음료
@@ -61,8 +61,8 @@ const Home: NextPage = () => {
                 </span>
               </div>
             </div>
-            <div className="flex flex-row pt-14 space-x-8">
-              <div className=" bg-blue-700 w-1/3 ease-in-out transition duration-300 opacity-50 hover:opacity-100 hover:scale-110">
+            <div className="flex flex-row pt-20 space-x-10">
+              <div className=" bg-blue-700 w-1/3 ease-in-out transition duration-300 opacity-70 hover:opacity-100 hover:scale-110">
                 <a href="/research/sensor">
                   <div className="p-10 font-medium text-xl text-center">
                     현장용 미생물 진단 센서
@@ -84,7 +84,7 @@ const Home: NextPage = () => {
                   </div>
                 </a>
               </div>
-              <div className=" bg-blue-900 w-1/3 ease-in-out transition duration-300 opacity-50 hover:opacity-100 hover:scale-110">
+              <div className=" bg-blue-900 w-1/3 ease-in-out transition duration-300 opacity-70 hover:opacity-100 hover:scale-110">
                 <a href="/research/green-tea">
                   <div className="p-10 font-medium text-xl text-center">
                     녹차 발효 음료 개발
@@ -106,7 +106,7 @@ const Home: NextPage = () => {
                   </div>
                 </a>
               </div>
-              <div className=" bg-slate-700 w-1/3 ease-in-out transition duration-300 opacity-50 hover:opacity-100 hover:scale-110">
+              <div className=" bg-slate-700 w-1/3 ease-in-out transition duration-300 opacity-70 hover:opacity-100 hover:scale-110">
                 <a href="/research/national-project">
                   <div className="p-10 font-medium text-xl text-center">
                     국가 지원 사업
@@ -133,7 +133,7 @@ const Home: NextPage = () => {
         </div>
         <div className="w-full h-screen snap-start ">
           <div className="flex w-full h-full flex-row">
-            <div className="w-2/5 flex flex-col h-full place-content-center px-10">
+            <div className="w-2/5 flex flex-col h-full place-content-center pl-20">
               <div className="flex justify-start ">
                 <span className="flex text-6xl font-bold ">BUSINESS</span>
               </div>
@@ -192,18 +192,19 @@ const Home: NextPage = () => {
                 </a>
               </div>
             </div>
-            <div className=" w-3/5 h-full -z-10">
+            <div className=" relative w-3/5 h-full -z-10">
               <Image
-                objectFit="contain"
+                objectFit="cover"
+                objectPosition="center"
                 src={business}
                 alt="business"
-                layout="responsive"
+                layout="fill"
               ></Image>
             </div>
           </div>
         </div>
-        <div className="w-full h-full snap-end bg-white">
-          <div className="flex flex-col pt-24 max-w-6xl mx-auto">
+        <div className="w-full h-full snap-start bg-white">
+          <div className="flex flex-col pt-40 max-w-6xl mx-auto">
             <div className="flex justify-center pt-10">
               <span className="flex text-5xl font-bold ">PARTNERS</span>
             </div>
@@ -290,6 +291,7 @@ const Home: NextPage = () => {
               </div>
             </div>
           </div>
+          <Footer />
         </div>
       </div>
       <style jsx>

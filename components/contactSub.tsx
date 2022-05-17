@@ -20,13 +20,14 @@ const ContactSub = ({ position }: { position: number }) => {
         ></Image>
         <div className="text-white font-bold text-5xl">CONTACT US</div>
         <div className=" absolute top-[28rem] flex w-1/2 right-40 justify-center text-2xl text-white space-x-5">
-          <div
+          <a
             className={cls(
-              "flex flex-row justify-between items-center w-1/4  border-b-4 pb-5 px-2 text-center font-bold",
+              "flex flex-row justify-between items-center w-1/4 hover:border-white border-b-4 pb-5 px-2 text-center font-bold",
               position === 0 ? "border-white " : "border-gray-500"
             )}
+            href="/contact"
           >
-            <a href="/contact">{t("SUBMENU_CONTACT_CONTACT")}</a>
+            <div>{t("SUBMENU_CONTACT_CONTACT")}</div>
             <div>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -41,14 +42,15 @@ const ContactSub = ({ position }: { position: number }) => {
                 />
               </svg>
             </div>
-          </div>
-          <div
+          </a>
+          <a
             className={cls(
-              "flex flex-row justify-between items-center w-1/4  border-b-4 pb-5 px-2 text-center font-bold",
+              "flex flex-row justify-between items-center w-1/4 hover:border-white border-b-4 pb-5 px-2 text-center font-bold",
               position === 1 ? "border-white " : "border-gray-500"
             )}
+            href="/contact/location"
           >
-            <a href="/contact/location">{t("SUBMENU_CONTACT_LOCATION")}</a>
+            <div>{t("SUBMENU_CONTACT_LOCATION")}</div>
             <div>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -63,7 +65,7 @@ const ContactSub = ({ position }: { position: number }) => {
                 />
               </svg>
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </div>

@@ -20,13 +20,14 @@ const BusinessSub = ({ position }: { position: number }) => {
         ></Image>
         <div className="text-white font-bold text-5xl">BUSINESS</div>
         <div className=" absolute top-[28rem] flex w-1/2 right-40 justify-center text-2xl text-white space-x-5">
-          <div
+          <a
             className={cls(
-              "flex flex-row justify-between items-center w-1/4  border-b-4 pb-5 px-2 text-center font-bold",
+              "flex flex-row justify-between items-center w-1/4 hover:border-white border-b-4 pb-5 px-2 text-center font-bold",
               position === 0 ? "border-white " : "border-gray-500"
             )}
+            href="/business/consult"
           >
-            <a href="/business/consult">{t("SUBMENU_BUSINESS_CONSULT")}</a>
+            <div>{t("SUBMENU_BUSINESS_CONSULT")}</div>
             <div>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -41,14 +42,15 @@ const BusinessSub = ({ position }: { position: number }) => {
                 />
               </svg>
             </div>
-          </div>
-          <div
+          </a>
+          <a
             className={cls(
-              "flex flex-row justify-between items-center w-1/4  border-b-4 pb-5 px-2 text-center font-bold",
+              "flex flex-row justify-between items-center w-1/4 hover:border-white border-b-4 pb-5 px-2 text-center font-bold",
               position === 1 ? "border-white " : "border-gray-500"
             )}
+            href="/business/market"
           >
-            <a href="/business/market">{t("SUBMENU_BUSINESS_MARKET")}</a>
+            <div>{t("SUBMENU_BUSINESS_MARKET")}</div>
             <div>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -63,7 +65,7 @@ const BusinessSub = ({ position }: { position: number }) => {
                 />
               </svg>
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </div>

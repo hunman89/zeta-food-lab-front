@@ -15,17 +15,17 @@ const Consult: NextPage = () => {
       <BusinessSub position={0} />
       <div className="w-full max-w-6xl mx-auto py-20">
         <div className="flex flex-col pt-20">
-          <div className="text-3xl font-bold pb-40">
-            {t("CONSULT_HACCP_HEAD")}
+          <div className="text-3xl font-bold pb-40 ">
+            <div className="animate-fadeInUp">{t("CONSULT_HACCP_HEAD")}</div>
           </div>
           <div className="flex flex-col text-2xl font-medium text-center space-y-3">
-            <div className="flex flex-row justify-center">
-              <div className="text-zetalight">{t("ZETA_NAME")}</div>&nbsp;
+            <div className="flex flex-row justify-center animate-fadeInUp">
+              <div className="text-zetalight ">{t("ZETA_NAME")}</div>&nbsp;
               <div>{t("CONSULT_HACCP_BODY_1")}</div>
             </div>
-            <div>{t("CONSULT_HACCP_BODY_2")}</div>
-            <div>{t("CONSULT_HACCP_BODY_3")}</div>
-            <div>{t("CONSULT_HACCP_BODY_4")}</div>
+            <div className="animate-fadeInUp">{t("CONSULT_HACCP_BODY_2")}</div>
+            <div className="animate-fadeInUp">{t("CONSULT_HACCP_BODY_3")}</div>
+            <div className="animate-fadeInUp">{t("CONSULT_HACCP_BODY_4")}</div>
           </div>
           <div className="pt-14 px-20 text-xl text-center text-gray-500">
             <div>{t("CONSULT_HACCP_BODY_5")}</div>

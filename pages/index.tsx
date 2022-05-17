@@ -36,7 +36,7 @@ const Home: NextPage = () => {
               <span className="flex text-white">SPECIALLIZED TECHNOLOGY.</span>
             </div>
             <div className="flex justify-end">
-              <span className="flex text-zetalight textDown">
+              <span className="transition flex text-zetalight animate-fadeInDown">
                 "SOLUTION(ζ, zeta)"
               </span>
             </div>
@@ -294,23 +294,6 @@ const Home: NextPage = () => {
           <Footer />
         </div>
       </div>
-      <style jsx>
-        {`
-          @keyframes fadeInDown {
-            0% {
-              opacity: 0;
-              transform: translate3d(0, -300%, 0);
-            }
-            to {
-              opacity: 1;
-              transform: translateZ(0);
-            }
-          }
-          .textDown {
-            animation: fadeInDown 1s;
-          }
-        `}
-      </style>
     </Layout>
   );
 };

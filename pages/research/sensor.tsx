@@ -17,12 +17,14 @@ const Sensor: NextPage = () => {
         <title>R&D</title>
       </Head>
       <ResearchSub position={0} />
-      <div className="w-full max-w-6xl mx-auto py-20 divide-y-2">
-        <div className="flex justify-center text-3xl text-gray-800 pb-20">
-          Integrated Colorimetric Biosensor For On-Site Foodborne Pathogen
-          Detection
+      <div className="w-full max-w-6xl mx-auto py-40 divide-y-2">
+        <div className="flex justify-center text-3xl text-gray-800 pb-40">
+          <div className=" animate-fadeInUp">
+            Integrated Colorimetric Biosensor For On-Site Foodborne Pathogen
+            Detection
+          </div>
         </div>
-        <div className="flex flex-col px-24 py-20 ">
+        <div className="flex flex-col px-24 py-40 ">
           <span className="text-xl font-bold text-gray-900 pb-14">
             Switchable linker based colorimetric biosensor using gold
             nanoparticle aggregation

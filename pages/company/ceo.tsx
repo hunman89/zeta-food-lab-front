@@ -15,8 +15,8 @@ const Ceo: NextPage = () => {
       </Head>
       <CompanySub position={1} />
       <div className="w-full max-w-6xl mx-auto py-20">
-        <div className="flex flex-col justify-around py-20">
-          <div className="text-2xl font-bold text-center">
+        <div className="flex flex-col justify-around py-20 ">
+          <div className="text-2xl font-bold text-center animate-fadeInUp">
             제타푸드랩은 식품안전을 포함한 식품 전반에 대한 혁신적인 솔루션을
             제공하여
             <div>새로운 가치를 창출하는 기업으로 도약하겠습니다.</div>

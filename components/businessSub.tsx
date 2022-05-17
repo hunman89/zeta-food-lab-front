@@ -18,11 +18,13 @@ const BusinessSub = ({ position }: { position: number }) => {
           objectPosition="center"
           className="-z-10 brightness-50"
         ></Image>
-        <div className="text-white font-bold text-5xl">BUSINESS</div>
+        <div className="text-white font-bold text-5xl animate-fadeIn">
+          BUSINESS
+        </div>
         <div className=" absolute top-[28rem] flex w-1/2 right-40 justify-center text-2xl text-white space-x-5">
           <a
             className={cls(
-              "flex flex-row justify-between items-center w-1/4 hover:border-white border-b-4 pb-5 px-2 text-center font-bold",
+              "flex flex-row justify-between items-center w-1/3 hover:border-white border-b-4 pb-5 px-2 text-center font-bold",
               position === 0 ? "border-white " : "border-gray-500"
             )}
             href="/business/consult"
@@ -45,7 +47,7 @@ const BusinessSub = ({ position }: { position: number }) => {
           </a>
           <a
             className={cls(
-              "flex flex-row justify-between items-center w-1/4 hover:border-white border-b-4 pb-5 px-2 text-center font-bold",
+              "flex flex-row justify-between items-center w-1/3 hover:border-white border-b-4 pb-5 px-2 text-center font-bold",
               position === 1 ? "border-white " : "border-gray-500"
             )}
             href="/business/market"

@@ -21,13 +21,16 @@ const Market: NextPage = () => {
       <BusinessSub position={1} />
       <div className="w-full max-w-6xl mx-auto py-20">
         <div className="flex flex-col justify-around pt-20">
-          <div className="text-xl pb-20 border-b-2">
-            63년 전통의 명인차 브랜드인 화개제다의 차류 제품을 온라인 위탁
-            판매하고 있습니다.
+          <div className="text-xl pb-20 border-b-2 ">
+            <div className="animate-fadeInUp">
+              63년 전통의 명인차 브랜드인 화개제다의 차류 제품을 온라인 위탁
+              판매하고 있습니다.
+            </div>
           </div>
           <div className="flex flex-row pt-20">
             <div className="w-1/3 h-20 my-auto">
               <Image
+                className="animate-fadeInUp"
                 objectFit="contain"
                 layout="responsive"
                 src={Okrotea}
@@ -35,7 +38,7 @@ const Market: NextPage = () => {
               ></Image>
             </div>
             <div className="w-2/3 text-xl text-gray-500 px-10 my-auto">
-              <div>
+              <div className="animate-fadeInUp">
                 녹차의 고장 하동에서 63년의 전통을 이어오고 있는 화개제다는 100%
                 국내산 재료를 이용한 야생 녹차 브랜드입니다.
               </div>

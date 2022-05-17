@@ -21,7 +21,43 @@ module.exports = {
       zetadark: "#003873",
       zetalight: "#0054a6",
     },
-    extend: {},
+    extend: {
+      keyframes: {
+        fadeInDown: {
+          "0%": {
+            opacity: 0,
+            transform: "translate3d(0, -100%, 0)",
+          },
+          "100%": {
+            opacity: 1,
+            transform: "translateZ(0)",
+          },
+        },
+        fadeInUp: {
+          "0%": {
+            opacity: 0,
+            transform: "translate3d(0, 100%, 0)",
+          },
+          "100%": {
+            opacity: 1,
+            transform: "translateZ(0)",
+          },
+        },
+        fadeIn: {
+          "0%": {
+            opacity: 0,
+          },
+          "100%": {
+            opacity: 1,
+          },
+        },
+      },
+      animation: {
+        fadeInDown: "fadeInDown 2s",
+        fadeInUp: "fadeInUp 1s",
+        fadeIn: "fadeIn 3s",
+      },
+    },
   },
   plugins: [require("tailwind-scrollbar-hide")],
 };

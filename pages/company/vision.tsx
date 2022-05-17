@@ -14,11 +14,13 @@ const Vision: NextPage = () => {
         <title>vision</title>
       </Head>
       <CompanySub position={3} />
-      <div className="w-full max-w-6xl mx-auto py-20">
+      <div className="w-full max-w-6xl mx-auto py-40">
         <div className="flex justify-center font-medium text-3xl text-gray-500 py-20">
-          {t("VISION_MAIN_01")}&nbsp;
-          <span className="text-zetalight">{t("VISION_MAIN_02")}&nbsp;</span>
-          {t("VISION_MAIN_03")}
+          <div className="animate-fadeInUp">
+            {t("VISION_MAIN_01")}&nbsp;
+            <span className="text-zetalight">{t("VISION_MAIN_02")}&nbsp;</span>
+            {t("VISION_MAIN_03")}
+          </div>
         </div>
         <div className="flex flex-row justify-around py-20 px-24">
           <div className="flex flex-col w-full">

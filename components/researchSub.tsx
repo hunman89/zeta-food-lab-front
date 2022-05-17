@@ -18,7 +18,7 @@ const ResearchSub = ({ position }: { position: number }) => {
           objectPosition="center"
           className="-z-10 brightness-50"
         ></Image>
-        <div className="text-white font-bold text-5xl">R&D</div>
+        <div className="text-white font-bold text-5xl animate-fadeIn">R&D</div>
         <div className=" absolute top-[28rem] flex w-1/2 right-40 justify-center text-2xl text-white space-x-5">
           <a
             className={cls(

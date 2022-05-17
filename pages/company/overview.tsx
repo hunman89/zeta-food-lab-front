@@ -18,11 +18,11 @@ const Overview: NextPage = () => {
       <CompanySub position={0} />
       <div className="flex flex-col w-full max-w-6xl mx-auto py-40 justify-around space-y-20">
         <div className="flex justify-center">
-          <p className=" text-gray-900 font-medium text-5xl">
+          <p className=" text-gray-900 font-medium text-5xl animate-fadeInUp">
             “ ZETA = SOLUTION (ζ) ”
           </p>
         </div>
-        <div className="flex flex-row justify-center space-x-2 items-center pt-20">
+        <div className="flex flex-row justify-center space-x-2 items-center pt-20 animate-fadeInUp">
           <div className="flex  aspect-square h-64 rounded-full justify-center border-2 border-[#003873]">
             <div className=" text-3xl my-auto text-center">
               {t("OVERVIEW_DEVELOP")}

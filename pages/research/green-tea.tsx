@@ -15,8 +15,10 @@ const GreenTea: NextPage = () => {
       </Head>
       <ResearchSub position={1} />
       <div className="w-full max-w-6xl mx-auto py-20 divide-y-2">
-        <div className="flex justify-center text-3xl text-gray-800 pb-20">
-          Development Of A Green Tea Fermented Beverage
+        <div className="flex justify-center text-3xl text-gray-800 pb-20 ">
+          <div className="animate-fadeInUp">
+            Development Of A Green Tea Fermented Beverage
+          </div>
         </div>
         <div className="flex flex-col px-24 pt-20 ">
           <Image className="-z-10" quality={20} src={green_tea}></Image>

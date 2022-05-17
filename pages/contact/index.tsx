@@ -16,7 +16,7 @@ const Contact: NextPage = () => {
         <title>Contact</title>
       </Head>
       <ContactSub position={0} />
-      <div className="w-full max-w-6xl mx-auto py-32">
+      <div className="w-full max-w-6xl mx-auto py-40">
         <div className="flex flex-row space-x-5">
           <div className="w-96 items-center">
             <Image className=" rounded-full object-cover" src={contact}></Image>

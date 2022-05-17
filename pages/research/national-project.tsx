@@ -14,7 +14,7 @@ const NationalProject: NextPage = () => {
         <title>R&D</title>
       </Head>
       <ResearchSub position={2} />
-      <div className="w-full max-w-6xl mx-auto py-20 ">
+      <div className="w-full max-w-6xl mx-auto py-40 ">
         <p className="indent-4 pb-20 text-2xl font-medium ">
           <div className="animate-fadeInUp">{t("FUNDED_COMMENT")}</div>
         </p>

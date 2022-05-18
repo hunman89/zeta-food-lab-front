@@ -27,7 +27,7 @@ const ResearchSub = ({ position }: { position: number }) => {
             )}
             href="/research/sensor"
           >
-            <div>{t("SUBMENU_RND_SENSOR")}</div>
+            <div className="text-xl">{t("SUBMENU_RND_SENSOR")}</div>
             <div>
               <svg
                 xmlns="http://www.w3.org/2000/svg"

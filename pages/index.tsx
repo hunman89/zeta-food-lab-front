@@ -20,8 +20,8 @@ import business from "../public/images/business.jpg";
 const Home: NextPage = () => {
   return (
     <Layout>
-      <div className="snap-y snap-mandatory transition-all h-screen overflow-scroll scrollbar-hide">
-        <div className="w-full h-screen snap-start bg-slate-300">
+      <div className="snap-y snap-mandatory scroll-smooth transition-all h-screen overflow-scroll scrollbar-hide">
+        <div className="w-full h-screen snap-start snap-always bg-slate-300">
           <div className="flex w-full flex-col py-80 max-w-6xl mx-auto space-y-4 text-5xl font-bold">
             <div className="flex justify-end">
               <span className="flex text-white ">WE PROVIDE</span>
@@ -42,7 +42,7 @@ const Home: NextPage = () => {
             </div>
           </div>
         </div>
-        <div className="w-full h-screen bg-slate-500 snap-start">
+        <div className="w-full h-screen bg-slate-500 snap-start snap-always">
           <div className=" pt-52 max-w-6xl mx-auto text-white">
             <div className="flex justify-center">
               <span className="flex text-6xl font-medium">R&D</span>
@@ -131,7 +131,7 @@ const Home: NextPage = () => {
             </div>
           </div>
         </div>
-        <div className="w-full h-screen snap-start ">
+        <div className="w-full h-screen snap-start snap-always">
           <div className="flex w-full h-full flex-row">
             <div className="w-2/5 flex flex-col h-full place-content-center pl-20">
               <div className="flex justify-start ">

@@ -1,6 +1,4 @@
 import React from "react";
-import Image from "next/image";
-import contact_us from "../public/images/contact_us.jpg";
 import { useTranslation } from "next-i18next";
 import { cls } from "utils/utils";
 
@@ -9,15 +7,14 @@ const ContactSub = ({ position }: { position: number }) => {
 
   return (
     <div>
-      <div className="relative flex flex-col py-64 px-40">
-        <Image
-          src={contact_us}
-          alt="ContactUs"
-          layout="fill"
-          objectFit="cover"
-          objectPosition="center"
-          className="-z-10 brightness-50"
-        ></Image>
+      <div
+        className="relative flex flex-col py-64 px-40"
+        style={{
+          background: `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("/images/contact_us.jpg")`,
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
         <div className="text-white font-bold text-5xl animate-fadeIn">
           CONTACT US
         </div>

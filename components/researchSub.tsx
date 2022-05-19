@@ -9,15 +9,14 @@ const ResearchSub = ({ position }: { position: number }) => {
 
   return (
     <div>
-      <div className="relative flex flex-col py-64 px-40">
-        <Image
-          src={research}
-          alt="Research"
-          layout="fill"
-          objectFit="cover"
-          objectPosition="center"
-          className="-z-10 brightness-50"
-        ></Image>
+      <div
+        className="relative flex flex-col py-64 px-40"
+        style={{
+          background: `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("/images/research.jpg")`,
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
         <div className="text-white font-bold text-5xl animate-fadeIn">R&D</div>
         <div className=" absolute top-[28rem] flex w-1/2 right-40 justify-center text-2xl text-white space-x-5">
           <a

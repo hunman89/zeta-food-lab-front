@@ -1,23 +1,19 @@
 import React from "react";
-import Image from "next/image";
-import business from "../public/images/business.jpg";
 import { useTranslation } from "next-i18next";
 import { cls } from "utils/utils";
 
 const BusinessSub = ({ position }: { position: number }) => {
   const { t } = useTranslation("common");
-
   return (
     <div>
-      <div className="relative flex flex-col py-64 px-40">
-        <Image
-          src={business}
-          alt="Business"
-          layout="fill"
-          objectFit="cover"
-          objectPosition="center"
-          className="-z-10 brightness-50"
-        ></Image>
+      <div
+        className="relative flex flex-col py-64 px-40"
+        style={{
+          background: `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("/images/business.jpg")`,
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
         <div className="text-white font-bold text-5xl animate-fadeIn">
           BUSINESS
         </div>

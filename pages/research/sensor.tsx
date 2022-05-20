@@ -41,7 +41,6 @@ const Sensor: NextPage = () => {
       <div className="w-full max-w-6xl mx-auto py-20 divide-y-2">
         <div className="flex flex-col py-40">
           <div className="text-3xl font-bold pb-40 animate-fadeInUp">
-            {" "}
             {t("SCRENNING_HEAD")}
           </div>
           <div className="flex flex-row">
@@ -309,7 +308,7 @@ const Sensor: NextPage = () => {
                     <Image layout="fill" src={kit_3} />
                   </div>
                   <div className="pt-5 font-bold text-xl text-center">
-                    {t("MSK_3_1")}{" "}
+                    {t("MSK_3_1")}
                   </div>
                   <div className="text-center">{t("MSK_3_2")} </div>
                 </div>
@@ -318,7 +317,7 @@ const Sensor: NextPage = () => {
                     <Image layout="fill" src={kit_4} />
                   </div>
                   <div className="pt-5 font-bold text-xl text-center">
-                    {t("MSK_4_1")}{" "}
+                    {t("MSK_4_1")}
                   </div>
                   <div className="text-center">{t("MSK_4_2")} </div>
                 </div>

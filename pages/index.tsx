@@ -16,12 +16,29 @@ import bacteria from "../public/icons/bacteria.png";
 import liquor from "../public/icons/liquor.png";
 import hand from "../public/icons/hand.png";
 import business from "../public/images/business.jpg";
+import { useEffect, useState } from "react";
+import { cls } from "utils/utils";
 
 const Home: NextPage = () => {
+  const [scrollPosition, setScrollPosition] = useState<string | undefined>(
+    "main1"
+  );
+  const getPosition = () => {
+    if (scrollPosition != document.elementFromPoint(50, 100)?.id) {
+      setScrollPosition(document.elementFromPoint(50, 100)?.id);
+    }
+  };
   return (
     <Layout>
-      <div className="snap-y snap-mandatory scroll-smooth transition-all h-screen overflow-scroll scrollbar-hide">
-        <div className="w-full h-screen snap-start snap-always bg-slate-300">
+      <div
+        id="main"
+        onScroll={getPosition}
+        className="snap-y snap-mandatory scroll-smooth transition-all h-screen overflow-scroll scrollbar-hide"
+      >
+        <div
+          id="main1"
+          className="w-full h-screen snap-start snap-always bg-slate-500"
+        >
           <div className="flex w-full flex-col py-80 max-w-6xl mx-auto space-y-4 text-5xl font-bold">
             <div className="flex justify-end">
               <span className="flex text-white ">WE PROVIDE</span>
@@ -42,7 +59,10 @@ const Home: NextPage = () => {
             </div>
           </div>
         </div>
-        <div className="w-full h-screen bg-slate-500 snap-start snap-always">
+        <div
+          id="main2"
+          className="w-full h-screen bg-slate-500 snap-start snap-always"
+        >
           <div className=" pt-52 max-w-6xl mx-auto text-white">
             <div className="flex justify-center">
               <span className="flex text-6xl font-medium">R&D</span>
@@ -131,9 +151,12 @@ const Home: NextPage = () => {
             </div>
           </div>
         </div>
-        <div className="w-full h-screen snap-start snap-always">
-          <div className="flex w-full h-full flex-row">
-            <div className="w-2/5 flex flex-col h-full place-content-center pl-20">
+        <div id="main3" className="w-full h-screen snap-start snap-always">
+          <div id="main3" className="flex w-full h-full flex-row">
+            <div
+              id="main3"
+              className="w-2/5 flex flex-col h-full place-content-center pl-40"
+            >
               <div className="flex justify-start ">
                 <span className="flex text-6xl font-bold ">BUSINESS</span>
               </div>
@@ -192,7 +215,7 @@ const Home: NextPage = () => {
                 </a>
               </div>
             </div>
-            <div className=" relative w-3/5 h-full -z-10">
+            <div id="main3" className=" relative w-3/5 h-full -z-10">
               <Image
                 objectFit="cover"
                 objectPosition="center"
@@ -203,8 +226,8 @@ const Home: NextPage = () => {
             </div>
           </div>
         </div>
-        <div className="w-full h-full snap-start bg-white">
-          <div className="flex flex-col pt-40 max-w-6xl mx-auto">
+        <div id="main4" className="w-full h-full snap-start bg-white">
+          <div className="flex flex-col pt-24 max-w-6xl mx-auto">
             <div className="flex justify-center pt-10">
               <span className="flex text-5xl font-bold ">PARTNERS</span>
             </div>
@@ -292,6 +315,50 @@ const Home: NextPage = () => {
             </div>
           </div>
           <Footer />
+        </div>
+      </div>
+      <div className="fixed top-1/2 left-20 ">
+        <div className="flex flex-col justify-center items-center p-3 space-y-8 -mt-14">
+          <a href="#main1">
+            <div
+              className={cls(
+                "w-2 aspect-square rounded-full  ",
+                scrollPosition === "main1"
+                  ? "bg-zetalight ring-2 ring-offset-4 ring-offset-slate-500"
+                  : " bg-slate-300"
+              )}
+            ></div>
+          </a>
+          <a href="#main2">
+            <div
+              className={cls(
+                "w-2 aspect-square rounded-full ",
+                scrollPosition === "main2"
+                  ? "bg-zetalight ring-2 ring-offset-4 ring-offset-slate-500"
+                  : "bg-slate-300"
+              )}
+            ></div>
+          </a>
+          <a href="#main3">
+            <div
+              className={cls(
+                "w-2 aspect-square rounded-full ",
+                scrollPosition === "main3"
+                  ? "bg-zetalight ring-2 ring-offset-4 ring-offset-white"
+                  : "bg-slate-300"
+              )}
+            ></div>
+          </a>
+          <a href="#main4">
+            <div
+              className={cls(
+                "w-2 aspect-square rounded-full ",
+                scrollPosition === "main4"
+                  ? "bg-zetalight ring-2 ring-offset-4 ring-offset-white"
+                  : "bg-slate-300"
+              )}
+            ></div>
+          </a>
         </div>
       </div>
     </Layout>

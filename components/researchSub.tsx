@@ -1,6 +1,4 @@
 import React from "react";
-import Image from "next/image";
-import research from "../public/images/research.jpg";
 import { useTranslation } from "next-i18next";
 import { cls } from "utils/utils";
 

@@ -22,10 +22,42 @@ const Overview: NextPage = () => {
             “ ZETA = SOLUTION (ζ) ”
           </p>
         </div>
+        <div className="flex flex-col text-3xl font-medium space-y-1 animate-fadeInUp">
+          <div className="flex justify-center">
+            <p className="flex text-[#003873]">{t("ZETA_NAME_SIMPLE")}</p>&nbsp;
+            {t("OVERVIEW_DESCRIPTION_1")}
+          </div>
+          <div className="flex justify-center">
+            {t("OVERVIEW_DESCRIPTION_2")}
+          </div>
+        </div>
         <div className="flex flex-row justify-center space-x-2 items-center pt-20 animate-fadeInUp">
-          <div className="flex  aspect-square h-64 rounded-full justify-center border-2 border-[#003873]">
-            <div className=" text-3xl my-auto text-center">
-              {t("OVERVIEW_DEVELOP")}
+          <div className="flex flex-col  aspect-square h-80 rounded-full justify-center border-2 border-zetadark bg-slate-100">
+            <div className="flex flex-col mx-auto my-auto space-y-5">
+              <div className="flex justify-center ">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-10 w-10 text-zetalight"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"
+                  />
+                </svg>
+              </div>
+              <div className="text-3xl text-center">
+                {t("OVERVIEW_DEVELOP")}
+              </div>
+              <div className="flex flex-col">
+                <div>미생물신속스크리닝</div>
+                <div>미생물진단키트</div>
+                <div>발효음료개발</div>
+              </div>
             </div>
           </div>
           <div className="flex">
@@ -42,10 +74,15 @@ const Overview: NextPage = () => {
               />
             </svg>
           </div>
-          <div className="flex bg-[#7fa8d5] aspect-square h-64 rounded-full justify-center">
-            <div className="my-auto ">
-              <div className="w-48">
-                <Image src={Logo} alt="Zeta Food Lab Logo"></Image>
+          <div className="flex aspect-square h-80 rounded-full justify-center border-2 border-zetadark">
+            <div className="flex justify-center items-center">
+              <div className="flex flex-col justify-center w-60 space-y-2">
+                <div className=" text-center">
+                  식품 혁신 솔루션을 제공하는 기업
+                </div>
+                <div className="flex w-48 mx-auto">
+                  <Image src={Logo} alt="Zeta Food Lab Logo"></Image>
+                </div>
               </div>
             </div>
           </div>
@@ -63,19 +100,32 @@ const Overview: NextPage = () => {
               />
             </svg>
           </div>
-          <div className="flex  aspect-square h-64 rounded-full justify-center border-2 border-[#003873]">
-            <div className=" my-auto text-3xl text-center">
-              {t("OVERVIEW_CONSULT")}
+          <div className="flex flex-col  aspect-square h-80 rounded-full justify-center border-2 border-zetadark bg-slate-100">
+            <div className="flex flex-col mx-auto my-auto space-y-5">
+              <div className="flex justify-center ">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-10 w-10 text-zetalight"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"
+                  />
+                </svg>
+              </div>
+              <div className="text-3xl text-center">
+                {t("OVERVIEW_CONSULT")}
+              </div>
+              <div className="flex flex-col">
+                <div>HACCP 컨설팅</div>
+                <div>지식 재산권 컨설팅</div>
+              </div>
             </div>
-          </div>
-        </div>
-        <div className="flex flex-col text-lg font-medium space-y-1">
-          <div className="flex justify-center">
-            <p className="flex text-[#003873]">{t("ZETA_NAME_SIMPLE")}</p>&nbsp;
-            {t("OVERVIEW_DESCRIPTION_1")}
-          </div>
-          <div className="flex justify-center">
-            {t("OVERVIEW_DESCRIPTION_2")}
           </div>
         </div>
       </div>

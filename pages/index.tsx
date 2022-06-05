@@ -258,9 +258,9 @@ const Home: NextPage = () => {
                 snu,
                 dku,
                 hongik,
-              ].map((name) => {
+              ].map((name, index) => {
                 return (
-                  <div className="grid w-full h-28 my-auto">
+                  <div className="grid w-full h-28 my-auto" key={index}>
                     <Image
                       objectFit="contain"
                       src={name}

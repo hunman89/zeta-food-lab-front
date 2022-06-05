@@ -1,7 +1,7 @@
 {
   "ZETA_NAME": "ZETAFOODLAB",
 
-  "CONSULT_HACCP_HEAD": "Technical consulting-HACCP 1",
+  "CONSULT_HACCP_HEAD": "Technical consulting-HACCP",
   "CONSULT_HACCP_BODY_1": "provides solutions to food and bio companies",
   "CONSULT_HACCP_BODY_2": "that require HACCP certification through technology delivery.",
   "CONSULT_HACCP_BODY_3": "We will do our best to provide customized consulting",
@@ -10,11 +10,16 @@
   "CONSULT_HACCP_BODY_6": "with domestic food companies-'INTAKE', 'HWAGAEJAEDA', and 'HWANGGEUMISSAK'.",
 
   "CONSULT_HACCP_BODY_2_HEAD": "What is HACCP?",
+  "CONSULT_HACCP_BODY_2_1": "HACCP is a \"sanitary management system\" to ensure food safety through autonomous and systematic management by identifying hazards that may occur at each stage from raw materials to manufacturing, processing, preservation, distribution, and cooking.",
+  "CONSULT_HACCP_BODY_2_2": "HACCP is recognized as the most effective and efficient food safety management system worldwide. The United States, Japan, the European Union, and international organizations (Codex, WHO, FAO) are also actively encouraging HACCP to be applied to all foods.",
 
   "CONSULT_HACCP_BODY_3_1": "Get HACCP certification and follow-up management with",
   "CONSULT_HACCP_BODY_3_2": "",
 
   "CONSULT_IPRS_HEAD": "Technical Consulting-IPRs",
   "CONSULT_IPRS_BODY_1": "provides consulting on technical issues related to",
-  "CONSULT_IPRS_BODY_2": "IPRs(intellectual property rights) of food and bio companies based on our abundant skills and knowledge."
+  "CONSULT_IPRS_BODY_2": "IPRs(intellectual property rights) of food and bio companies based on our abundant skills and knowledge.",
+
+  "MARKET_1": "We sell products of tea master's brand “HWAGAEJAEDA”, online.",
+  "MARKET_2": "“HWAGAEJAEDA”, which has a 63-year tradition in Hadong, the home of green tea, is a wild green tea brand that uses 100% domestic ingredients."
 }

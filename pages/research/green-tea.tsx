@@ -24,20 +24,20 @@ const GreenTea: NextPage = () => {
           <Image className="-z-10" quality={20} src={green_tea}></Image>
         </div>
         <div className="pt-20 space-y-8">
-          <div className="text-xl font-bold text-center">
+          <div className="text-2xl font-bold text-center">
             {t("GREEN_TEA_SUB")}
           </div>
-          <div className=" text-center">
+          <div className="text-xl text-center">
             <div>{t("GREEN_TEA_BODY_1")}</div>
             <div>{t("GREEN_TEA_BODY_2")}</div>
           </div>
-          <div className=" text-center">
+          <div className="text-xl text-center">
             <div>{t("GREEN_TEA_BODY_3")}</div>
             <div>{t("GREEN_TEA_BODY_4")}</div>
           </div>
         </div>
         <div className="py-40">
-          <div className="px-20 text-center text-xl font-medium">
+          <div className="px-20 text-justify text-xl font-medium">
             {t("GREEN_TEA_BODY_5")}
           </div>
         </div>

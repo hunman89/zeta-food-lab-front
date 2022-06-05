@@ -2,7 +2,7 @@ import * as React from "react";
 import { NextPage } from "next";
 import Layout from "../../components/layout";
 import Head from "next/head";
-import Okrotea from "../../public/logos/Okrotea.png";
+import Okrotea from "../../public/logos/okrotea.png";
 import Image from "next/image";
 import Link from "next/link";
 import naverShop from "../../public/logos/navershop.png";
@@ -11,8 +11,10 @@ import kakao from "../../public/logos/kakao.png";
 import sanrim from "../../public/logos/sanrim.png";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import BusinessSub from "components/businessSub";
+import { useTranslation } from "next-i18next";
 
 const Market: NextPage = () => {
+  const { t } = useTranslation("business");
   return (
     <Layout footer>
       <Head>
@@ -22,10 +24,7 @@ const Market: NextPage = () => {
       <div className="w-full max-w-6xl mx-auto py-20">
         <div className="flex flex-col justify-around pt-20">
           <div className="text-xl pb-20 border-b-2 ">
-            <div className="animate-fadeInUp">
-              63년 전통의 명인차 브랜드인 화개제다의 차류 제품을 온라인 위탁
-              판매하고 있습니다.
-            </div>
+            <div className="animate-fadeInUp">{t("MARKET_1")}</div>
           </div>
           <div className="flex flex-row pt-20">
             <div className="w-1/3 h-20 my-auto">
@@ -38,10 +37,7 @@ const Market: NextPage = () => {
               ></Image>
             </div>
             <div className="w-2/3 text-xl text-gray-500 px-10 my-auto">
-              <div className="animate-fadeInUp">
-                녹차의 고장 하동에서 63년의 전통을 이어오고 있는 화개제다는 100%
-                국내산 재료를 이용한 야생 녹차 브랜드입니다.
-              </div>
+              <div className="animate-fadeInUp">{t("MARKET_2")}</div>
             </div>
           </div>
           <div className="grid grid-cols-4 gap-x-24 gap-y-5 py-40">
@@ -102,7 +98,7 @@ const Market: NextPage = () => {
 
 export const getStaticProps = async ({ locale }: { locale: string }) => ({
   props: {
-    ...(await serverSideTranslations(locale, ["common"])),
+    ...(await serverSideTranslations(locale, ["common", "business"])),
   },
 });
 

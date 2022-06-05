@@ -15,7 +15,7 @@ const Vision: NextPage = () => {
       </Head>
       <CompanySub position={3} />
       <div className="w-full max-w-6xl mx-auto py-40">
-        <div className="flex justify-center font-medium text-3xl text-gray-500 py-20">
+        <div className="flex justify-center font-medium text-3xl text-gray-500">
           <div className="animate-fadeInUp">
             {t("VISION_MAIN_01")}&nbsp;
             <span className="text-zetalight">{t("VISION_MAIN_02")}&nbsp;</span>

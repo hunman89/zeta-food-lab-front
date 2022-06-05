@@ -15,11 +15,11 @@ const NationalProject: NextPage = () => {
       </Head>
       <ResearchSub position={2} />
       <div className="w-full max-w-6xl mx-auto py-40 ">
+        <div className="animate-fadeInUp opacity-60 -mb-8">
+          <div className="bg-zetadark h-10 aspect-square"></div>
+          <div className=" bg-zetalight h-10 aspect-square -mt-8 ml-2"></div>
+        </div>
         <p className="indent-4 pb-20 text-2xl font-medium ">
-          <div className=" opacity-60 -mb-8">
-            <div className="bg-zetadark h-10 aspect-square"></div>
-            <div className=" bg-zetalight h-10 aspect-square -mt-8 ml-2"></div>
-          </div>
           <div className="animate-fadeInUp">{t("FUNDED_COMMENT")}</div>
         </p>
         <div>

@@ -29,6 +29,7 @@ import kit_4 from "../../public/images/RnD/kit/kit-4.png";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import ResearchSub from "components/researchSub";
 import { useTranslation } from "next-i18next";
+import TextDecoration from "components/textDecoration";
 
 const Sensor: NextPage = () => {
   const { t } = useTranslation("research");
@@ -39,9 +40,12 @@ const Sensor: NextPage = () => {
       </Head>
       <ResearchSub position={0} />
       <div className="w-full max-w-6xl mx-auto py-20 divide-y-2">
-        <div className="flex flex-col py-40">
-          <div className="text-3xl font-bold pb-40 animate-fadeInUp">
-            {t("SCRENNING_HEAD")}
+        <div className="flex flex-col py-20">
+          <div className="flex flex-row space-x-3 animate-fadeInUp">
+            <TextDecoration />
+            <div className="text-3xl font-bold pb-40 ">
+              {t("SCRENNING_HEAD")}
+            </div>
           </div>
           <div className="flex flex-row">
             <div className="w-1/5 pt-3">
@@ -138,7 +142,10 @@ const Sensor: NextPage = () => {
           </div>
         </div>
         <div className="flex flex-col py-40">
-          <div className="text-3xl font-bold">{t("PRE_HEAD")}</div>
+          <div className="flex flex-row space-x-3">
+            <TextDecoration />
+            <div className="text-3xl font-bold">{t("PRE_HEAD")}</div>
+          </div>
           <div className="flex flex-col pt-40">
             <div className="flex flex-row justify-center space-x-20 ">
               <div className="flex w-52 border-amber-800 border-4 rounded-full aspect-square items-center justify-center">
@@ -238,114 +245,97 @@ const Sensor: NextPage = () => {
           </div>
         </div>
         <div className="flex flex-col py-40 ">
-          <span className="text-3xl font-bold text-gray-900 pb-40">
-            {t("SENSOR_HEAD")}
-          </span>
+          <div className="flex flex-row space-x-3 animate-fadeInUp">
+            <TextDecoration />
+            <span className="text-3xl font-bold text-gray-900 pb-40">
+              {t("SENSOR_HEAD")}
+            </span>
+          </div>
           <Image className="-z-10" quality={50} src={switchable_linker}></Image>
         </div>
         <div className="flex flex-col py-40 ">
-          <div className="text-3xl font-bold">{t("MSK_HEAD")}</div>
+          <div className="flex flex-row space-x-3 animate-fadeInUp">
+            <TextDecoration />
+            <div className="text-3xl font-bold">{t("MSK_HEAD")}</div>
+          </div>
           <div className="text-2xl font font-medium text-center pt-40 px-10">
             {t("MSK_BODY_1")}
           </div>
-          <div className="pt-20 px-24">
-            <div>{t("MSK_BODY_2")}</div>
-            <div>{t("MSK_BODY_3")}</div>
-            <div>{t("MSK_BODY_4")}</div>
+          <div className="flex flex-col pt-20 pb-1">
+            <table className=" border-separate w-full">
+              <thead>
+                <tr>
+                  <th className="border-4 border-gray-300 py-3">특허명</th>
+                  <th className="border-4 border-gray-300">등록번호</th>
+                  <th className="border-4 border-gray-300">등록일</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th className="border-4 border-gray-300 py-3">
+                    {t("MSK_BODY_2_1")}
+                  </th>
+                  <th className="border-4 border-gray-300">
+                    {t("MSK_BODY_2_2")}
+                  </th>
+                  <th className="border-4 border-gray-300">
+                    {t("MSK_BODY_2_3")}
+                  </th>
+                </tr>
+                <tr>
+                  <th className="border-4 border-gray-300 py-3">
+                    {t("MSK_BODY_3_1")}
+                  </th>
+                  <th className="border-4 border-gray-300">
+                    {t("MSK_BODY_3_2")}
+                  </th>
+                  <th className="border-4 border-gray-300">
+                    {t("MSK_BODY_3_3")}
+                  </th>
+                </tr>
+                <tr>
+                  <th className="border-4 border-gray-300 py-3">
+                    {t("MSK_BODY_4_1")}
+                  </th>
+                  <th className="border-4 border-gray-300">
+                    {t("MSK_BODY_4_2")}
+                  </th>
+                  <th className="border-4 border-gray-300">
+                    {t("MSK_BODY_4_3")}
+                  </th>
+                </tr>
+              </tbody>
+            </table>
           </div>
-        </div>
-        <div className="flex flex-col py-40">
-          <div className="text-3xl font-bold"> {t("MSK_HEAD")}</div>
-          <div className="flex flex-row justify-center pt-40 space-x-5">
-            <div className="flex items-center">
-              <a
-                className="hover:cursor-pointer"
-                onClick={() =>
-                  document.getElementById("content")?.scrollBy(-30, 0)
-                }
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-10 w-10"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M15 19l-7-7 7-7"
-                  />
-                </svg>
-              </a>
-            </div>
-            <div className="relative overflow-auto w-[600px]">
-              <div
-                id="content"
-                className="flex w-full gap-12 snap-x scroll-smooth snap-mandatory overflow-x-auto scrollbar-hide"
-              >
-                <div className="snap-center snap-always w-[600px]">
-                  <div className="relative w-[600px] h-[400px]">
-                    <Image layout="fill" src={kit_1} />
+          <div className="flex flex-row space-x-3">
+            {[0, 0, 0, 0].map((_, index) => {
+              return (
+                <div key={index} className="border-4 border-gray-300 w-1/4 p-3">
+                  <div className="py-10 text-center">
+                    <div className="font-bold text-2xl text-zetalight">
+                      {t(`MSK_${index + 1}_1`)}
+                    </div>
+                    <div className="">{t(`MSK_${index + 1}_2`)}</div>
                   </div>
-                  <div className="pt-5 font-bold text-xl text-center">
-                    {t("MSK_1_1")}
+                  <div className="w-full">
+                    <Image
+                      src={
+                        index == 0
+                          ? kit_1
+                          : index == 1
+                          ? kit_2
+                          : index == 2
+                          ? kit_3
+                          : kit_4
+                      }
+                    />
                   </div>
-                  <div className="text-center">{t("MSK_1_2")}</div>
+                  <div className="text-center py-10">
+                    {t(`MSK_${index + 1}_3`)}
+                  </div>
                 </div>
-                <div className="snap-center snap-always w-[600px]">
-                  <div className="relative w-[600px] h-[400px]">
-                    <Image layout="fill" src={kit_2} />
-                  </div>
-                  <div className="pt-5 font-bold text-xl text-center">
-                    {t("MSK_2_1")}
-                  </div>
-                  <div className="text-center">{t("MSK_2_2")} </div>
-                </div>
-                <div className="snap-center snap-always w-[600px]">
-                  <div className="relative w-[600px] h-[400px]">
-                    <Image layout="fill" src={kit_3} />
-                  </div>
-                  <div className="pt-5 font-bold text-xl text-center">
-                    {t("MSK_3_1")}
-                  </div>
-                  <div className="text-center">{t("MSK_3_2")} </div>
-                </div>
-                <div className="snap-center snap-always w-[600px]">
-                  <div className="relative w-[600px] h-[400px]">
-                    <Image layout="fill" src={kit_4} />
-                  </div>
-                  <div className="pt-5 font-bold text-xl text-center">
-                    {t("MSK_4_1")}
-                  </div>
-                  <div className="text-center">{t("MSK_4_2")} </div>
-                </div>
-              </div>
-            </div>
-            <div className="flex items-center ">
-              <a
-                className="hover:cursor-pointer"
-                onClick={() =>
-                  document.getElementById("content")?.scrollBy(30, 0)
-                }
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-10 w-10"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M9 5l7 7-7 7"
-                  />
-                </svg>
-              </a>
-            </div>
+              );
+            })}
           </div>
         </div>
       </div>

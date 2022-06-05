@@ -14,8 +14,8 @@ const Consult: NextPage = () => {
       </Head>
       <BusinessSub position={0} />
       <div className="w-full max-w-6xl mx-auto py-20">
-        <div className="flex flex-col pt-20">
-          <div className="text-3xl font-bold pb-40 ">
+        <div className="flex flex-col">
+          <div className="text-3xl font-bold py-20">
             <div className="animate-fadeInUp">{t("CONSULT_HACCP_HEAD")}</div>
           </div>
           <div className="flex flex-col text-2xl font-medium text-center space-y-3">

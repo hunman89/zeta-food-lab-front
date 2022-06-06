@@ -41,8 +41,7 @@
   "MSK_4_2": "(Advanced Flat Panel Kit)",
   "MSK_4_3": "Modified valves for ease of operation and reduced overall size",
 
-  "GREEN_TEA_HEAD": "Fermented green tea",
-  "GREEN_TEA_SUB": "Development of Korean Green Tea Fermented Beverage Using Wild Yeast Originated from Korean Traditional Green Tea",
+  "GREEN_TEA_HEAD": "Development of Korean Green Tea Fermented Beverage Using Wild Yeast Originated from Korean Traditional Green Tea",
   "GREEN_TEA_BODY_1": "The fermentation process is developed using GRAS certified wild yeast obtained by identifying fermentation liquid after fermentation",
   "GREEN_TEA_BODY_2": "using green tea raw materials grown in Ha-dong, the home of Korean green tea.",
   "GREEN_TEA_BODY_3": "Fermentation method with improved preference is optimized by controlling the type of green tea,",
@@ -50,15 +49,15 @@
   "GREEN_TEA_BODY_5": "Unlike foreign countries, where kombucha is already popular, the popularity of fermented drinks in Korea has soared recently as they were introduced by famous Korean idol and Hollywood actors. In addition, as kombucha is known to be beneficial to health, it is especially popular with millennials and MZ generations who are interested in healthy life and eating habits.",
 
   "FUNDED_COMMENT": "We have been selected for a number of state-funded projects since its establishment and have been recognized for its technology and business feasibility. We have developed our prototype MSK through a state support project, and we aim to advance the rapid screening technology of microorganisms through state support such as the ongoing IPET high value-added project.",
-  "FUNDED_2021_01": "- Practical Start-up Training",
-  "FUNDED_2021_02": "- Preliminary Start-up Package",
-  "FUNDED_2021_03": "- Makerspace Prototyping Support",
-  "FUNDED_2021_04": "- WISET Science and Engineering Researcher Support Project",
-  "FUNDED_2022_01": "- Agri-food Venture Development Support Project",
-  "FUNDED_2022_02": "- Si-heung Startup Center Prototyping Support Project",
-  "FUNDED_2022_03": "- Patent Strategy Consulting Support Project",
-  "FUNDED_2022_04": "- Voucher for Start-up Company Support Service",
-  "FUNDED_2022_05": "- IPET High-value Project",
-  "FUNDED_2022_06": "- Study on the Diversification and Preference of Korean Military Combat Food",
-  "FUNDED_2022_07": "- WISET Science and Engineering Researcher Substitute Utilization Support Project"
+  "FUNDED_2021_01": "Practical Start-up Training",
+  "FUNDED_2021_02": "Preliminary Start-up Package",
+  "FUNDED_2021_03": "Makerspace Prototyping Support",
+  "FUNDED_2021_04": "WISET Science and Engineering Researcher Support Project",
+  "FUNDED_2022_01": "Agri-food Venture Development Support Project",
+  "FUNDED_2022_02": "Si-heung Startup Center Prototyping Support Project",
+  "FUNDED_2022_03": "Patent Strategy Consulting Support Project",
+  "FUNDED_2022_04": "Voucher for Start-up Company Support Service",
+  "FUNDED_2022_05": "IPET High-value Project",
+  "FUNDED_2022_06": "Study on the Diversification and Preference of Korean Military Combat Food",
+  "FUNDED_2022_07": "WISET Science and Engineering Researcher Substitute Utilization Support Project"
 }

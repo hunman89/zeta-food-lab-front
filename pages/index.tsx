@@ -234,7 +234,7 @@ const Home: NextPage = () => {
             </div>
           </div>
         </div>
-        <div id="main4" className="w-full h-full snap-start bg-white">
+        <div id="main4" className="w-full snap-start snap-normal bg-white">
           <div className="flex flex-col pt-24 max-w-6xl mx-auto">
             <div className="flex justify-center pt-10">
               <span className="flex text-6xl font-bold ">PARTNERS</span>

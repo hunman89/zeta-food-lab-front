@@ -103,7 +103,7 @@ const Sensor: NextPage = () => {
               <div className="flex h-20 bg-amber-500 text-white items-center justify-center text-center rounded-lg border-none px-8">
                 Ara h 1 as a food allergen in cookies
               </div>
-              <div className="h-40">
+              <div className="h-40 items-center">
                 <Image src={msk_1}></Image>
               </div>
               <div className="relative h-40">

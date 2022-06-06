@@ -22,14 +22,16 @@ const Contact: NextPage = () => {
             <Image className=" rounded-full object-cover" src={contact}></Image>
           </div>
           <div className="flex flex-col justify-center px-16">
-            <div className="text-xl text-gray-700">{t("CONTACT_BODY")}</div>
-            <div className="py-4 text-gray-900 font-bold">
+            <div className="text-3xl text-gray-700 leading-loose">
+              {t("CONTACT_BODY")}
+            </div>
+            <div className="text-2xl py-4 text-gray-900 font-bold">
               zetafoodlab@gmail.com
             </div>
             <div>
               <a
                 href="mailto:zetafoodlab@gmail.com"
-                className=" border-none p-2 bg-zetalight text-white"
+                className="text-xl border-none p-2 bg-zetalight text-white"
               >
                 {t("CONTACT_BUTTON")}
               </a>

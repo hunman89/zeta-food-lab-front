@@ -54,8 +54,10 @@ const Location: NextPage = () => {
       <ContactSub position={1} />
       <div className="w-full max-w-6xl mx-auto py-40">
         <div className="flex flex-col">
-          <div className="text-2xl font-bold">{t("HEAD_OFFICE")}</div>
-          <div className="text-gray-600 pt-4 pb-10">{t("LOCATION_OFFICE")}</div>
+          <div className="text-4xl font-bold">{t("HEAD_OFFICE")}</div>
+          <div className="text-2xl text-gray-600 pt-4 pb-10">
+            {t("LOCATION_OFFICE")}
+          </div>
           <div className="pt-10 border-t-2 border-gray-400">
             <div id="map" style={{ width: "1040px", height: "540px" }}></div>
           </div>

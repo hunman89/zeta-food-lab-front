@@ -5,6 +5,8 @@ import Head from "next/head";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import CompanySub from "components/companySub";
+import vision from "../../public/images/vision.jpg";
+import Image from "next/image";
 
 const Vision: NextPage = () => {
   const { t } = useTranslation("company");
@@ -22,7 +24,10 @@ const Vision: NextPage = () => {
             {t("VISION_MAIN_03")}
           </div>
         </div>
-        <div className="flex flex-row justify-around py-20 px-24">
+        <div className="pt-20">
+          <Image src={vision}></Image>
+        </div>
+        {/* <div className="flex flex-row justify-around py-20 px-24">
           <div className="flex flex-col w-full">
             <div className="pl-5">
               <div className="text-2xl font-bold pb-3">
@@ -77,7 +82,7 @@ const Vision: NextPage = () => {
             <div className=" border-b-4 flex flex-row justify-between">
               <div className="bg-zetalight rounded-full w-4 aspect-square -ml-2 -mb-2.5" />
               <div>
-                {/* <svg
+                <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-4 w-4 font-bold -mb-2.5 -mr-1 fill-black"
                   fill="currentColor"
@@ -87,7 +92,7 @@ const Vision: NextPage = () => {
                     d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
                     clipRule="evenodd"
                   />
-                </svg> */}
+                </svg>
               </div>
             </div>
             <div className="pl-5 font-medium pt-3">
@@ -96,7 +101,7 @@ const Vision: NextPage = () => {
               <div>{t("VISION_THIRD_CONTENTS_03")}</div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </Layout>
   );

@@ -12,6 +12,7 @@ import sanrim from "../../public/logos/sanrim.png";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import BusinessSub from "components/businessSub";
 import { useTranslation } from "next-i18next";
+import TextDecoration from "components/textDecoration";
 
 const Market: NextPage = () => {
   const { t } = useTranslation("business");
@@ -23,8 +24,11 @@ const Market: NextPage = () => {
       <BusinessSub position={1} />
       <div className="w-full max-w-6xl mx-auto py-20">
         <div className="flex flex-col justify-around pt-20">
-          <div className="text-xl pb-20 border-b-2 ">
-            <div className="animate-fadeInUp">{t("MARKET_1")}</div>
+          <div className="text-2xl pb-20 border-b-2 ">
+            <div className="flex flex-row space-x-3 animate-fadeInUp">
+              <TextDecoration />
+              <div>{t("MARKET_1")}</div>
+            </div>
           </div>
           <div className="flex flex-row pt-20">
             <div className="w-1/3 h-20 my-auto">

@@ -8,7 +8,7 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      sans: ["NanumSquareBold", ...defaultTheme.fontFamily.sans],
+      sans: ["NanumSquare", ...defaultTheme.fontFamily.sans],
     },
     colors: {
       transparent: "transparent",

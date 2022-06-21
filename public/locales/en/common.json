@@ -1,12 +1,13 @@
 {
   "PHONE": "TEL",
   "EMAIL": "EMAIL",
-  "ZETA_NAME": "ZETAFOODLAB CORPORATION",
-  "ZETA_ADDRESS": "Seoul National University Future Mobility Research Building 602, 82, Baegot 2-ro, Siheung-si, Gyeonggi-do, Republic of Korea",
+  "ZETA_NAME": "ZETAFOODLAB",
+  "ZETA_ADDRESS": "Seoul National University Future Mobility Research Building 602, 82, Baegot 2-ro, Siheung-si, Gyeonggi-do, Republic of Korea, 15011",
 
   "SUBMENU_ABOUT_OVERVIEW": "Company",
   "SUBMENU_ABOUT_HISTORY": "History",
   "SUBMENU_ABOUT_VISION": "Vision",
+  "SUBMENU_ABOUT_CEO": "CEO Message",
   "SUBMENU_RND_SENSOR": "Microbial rapid screening",
   "SUBMENU_RND_GREEN_TEA": "Fermented green tea",
   "SUBMENU_RND_NATIONAL_PROJECT": "State-funded projects",

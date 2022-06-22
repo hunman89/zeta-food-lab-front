@@ -16,7 +16,7 @@ const ResearchSub = ({ position }: { position: number }) => {
         }}
       >
         <div className="text-white font-bold text-5xl animate-fadeIn">R&D</div>
-        <div className=" absolute top-[28rem] flex w-1/2 right-40 justify-center text-2xl text-white space-x-5">
+        <div className=" absolute top-[28rem] flex w-1/2 right-40 justify-center text-xl text-white space-x-5">
           <a
             className={cls(
               "flex flex-row justify-between items-center w-1/3 hover:border-white  border-b-4 pb-5 px-2 text-center font-bold",
@@ -24,7 +24,7 @@ const ResearchSub = ({ position }: { position: number }) => {
             )}
             href="/research/sensor"
           >
-            <div className="text-xl">{t("SUBMENU_RND_SENSOR")}</div>
+            <div>{t("SUBMENU_RND_SENSOR")}</div>
             <div>
               <svg
                 xmlns="http://www.w3.org/2000/svg"

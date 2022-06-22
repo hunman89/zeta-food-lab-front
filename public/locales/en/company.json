@@ -1,8 +1,14 @@
 {
   "ZETA_NAME_SIMPLE": "ZETAFOODLAB",
 
-  "OVERVIEW_DEVELOP": "DEVELOP OUR OWN TECHNOLOGY",
+  "OVERVIEW_DEVELOP": "TECHNOLOGY",
+  "OVERVIEW_DEVELOP_1": "Microbial Rapid Screening",
+  "OVERVIEW_DEVELOP_2": "MSK Kit",
+  "OVERVIEW_DEVELOP_3": "Fermented Green Tea",
+  "OVERVIEW_CENTOR": "Providing Innovative Food Solution",
   "OVERVIEW_CONSULT": "CONSULTING",
+  "OVERVIEW_CONSULT_1": "HACCP Consulting",
+  "OVERVIEW_CONSULT_2": "IPs Consulting",
   "OVERVIEW_DESCRIPTION_1": "develop our technology",
   "OVERVIEW_DESCRIPTION_2": "and provide solutions for food and bio.",
   "OVERVIEW_BODY_1": "Founded in September 2021, ZETAFOODLAB has qualified specialists and advisors from industry and academia, which is a team of passionate people and is dedicated to be the best of total solution delivery in the food and bio industries.",

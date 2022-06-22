@@ -54,9 +54,9 @@ const Overview: NextPage = () => {
                 {t("OVERVIEW_DEVELOP")}
               </div>
               <div className="flex flex-col">
-                <div>미생물신속스크리닝</div>
-                <div>미생물진단키트</div>
-                <div>발효음료개발</div>
+                <div>{t("OVERVIEW_DEVELOP_1")}</div>
+                <div>{t("OVERVIEW_DEVELOP_2")}</div>
+                <div>{t("OVERVIEW_DEVELOP_3")}</div>
               </div>
             </div>
           </div>
@@ -77,10 +77,10 @@ const Overview: NextPage = () => {
           <div className="flex aspect-square h-80 rounded-full justify-center border-2 border-zetadark">
             <div className="flex justify-center items-center">
               <div className="flex flex-col justify-center w-60 space-y-2">
-                <div className=" text-center">
-                  식품 혁신 솔루션을 제공하는 기업
+                <div className=" text-center text-sm">
+                  {t("OVERVIEW_CENTOR")}
                 </div>
-                <div className="flex w-48 mx-auto">
+                <div className="flex w-56 mx-auto">
                   <Image src={Logo} alt="Zeta Food Lab Logo"></Image>
                 </div>
               </div>
@@ -122,19 +122,19 @@ const Overview: NextPage = () => {
                 {t("OVERVIEW_CONSULT")}
               </div>
               <div className="flex flex-col">
-                <div>HACCP 컨설팅</div>
-                <div>지식 재산권 컨설팅</div>
+                <div>{t("OVERVIEW_CONSULT_1")}</div>
+                <div>{t("OVERVIEW_CONSULT_2")}</div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="flex flex-col w-full max-w-6xl mx-auto py-20 justify-around space-y-20">
+      <div className="flex flex-col w-full max-w-6xl mx-auto pb-20 justify-around space-y-20">
         <div className="px-10 text-gray-600 text-xl space-y-5">
           <div>{t("OVERVIEW_BODY_1")}</div>
           <div>{t("OVERVIEW_BODY_2")}</div>
         </div>
-        <div className=" space-y-5">
+        {/* <div className=" space-y-5">
           <div className="text-lg">LOGO COLOR</div>
           <div className="px-2 flex flex-row items-center">
             <div className="bg-[#0054a6] h-10 aspect-square rounded-lg"></div>
@@ -152,7 +152,7 @@ const Overview: NextPage = () => {
               <div className="tracking-wide">C 100 / M 52 / Y 0 / K 55</div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </Layout>
   );

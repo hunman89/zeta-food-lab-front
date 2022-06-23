@@ -39,10 +39,12 @@ const Home: NextPage = () => {
           id="main1"
           className="w-full h-screen snap-start snap-always"
           style={{
-            background: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("/images/bio.jpg")`,
+            background: `linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url("/images/bio.png")`,
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "bottom",
           }}
         >
-          <div className="flex w-full flex-col py-80 max-w-6xl mx-auto space-y-4 text-5xl font-bold">
+          <div className="flex w-full flex-col py-80 max-w-6xl mx-auto space-y-4 text-5xl font-black">
             <div className="flex justify-end">
               <span className="flex text-white ">WE PROVIDE</span>
             </div>
@@ -53,10 +55,13 @@ const Home: NextPage = () => {
               <span className="flex text-white">THROUGH OUR</span>
             </div>
             <div className="flex justify-end">
-              <span className="flex text-white">SPECIALLIZED TECHNOLOGY.</span>
+              <span className="flex text-white">SPECIALIZED TECHNOLOGY</span>
             </div>
             <div className="flex justify-end">
-              <span className="transition flex text-zetalight animate-fadeInDown">
+              <span
+                className="flex text-sky-400"
+                style={{ textShadow: "1px 1px 2px gray" }}
+              >
                 "SOLUTION(ζ, zeta)"
               </span>
             </div>
@@ -66,7 +71,10 @@ const Home: NextPage = () => {
           id="main2"
           className="w-full h-screen snap-start snap-always"
           style={{
-            background: `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("/images/bio2.jpg")`,
+            background: `linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("/images/bio2.png")`,
+            backgroundSize: "contain",
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "bottom",
           }}
         >
           <div className=" pt-52 max-w-6xl mx-auto text-white">

@@ -1,24 +1,30 @@
 {
   "ZETA_NAME": "제타푸드랩",
 
-  "CONSULT_HACCP_HEAD": "기술 컨설팅-HACCP",
-  "CONSULT_HACCP_BODY_1": "은 기술 제공을 통해 HACCP 인증 획득이 필요한",
-  "CONSULT_HACCP_BODY_2": "식품 및 바이오 업체에 솔루션을 제공합니다.",
-  "CONSULT_HACCP_BODY_3": "고객의 상황에 맞는 맞춤형 컨설팅을 제공하도록",
-  "CONSULT_HACCP_BODY_4": "최선을 다하는 제타푸드랩이 되겠습니다.",
-  "CONSULT_HACCP_BODY_5": "제타푸드랩은 국내 식품 업체인 ‘인테이크’, ‘화개제다’, ‘황금이삭’과의",
-  "CONSULT_HACCP_BODY_6": "HACCP 컨설팅을 통해 HACCP 컨설팅 시장에서의 입지를 다져가고 있습니다.",
+  "CONSULT_HACCP_HEAD": "기술 컨설팅 (Technical Consulting)",
+  "CONSULT_HACCP_BODY_1": "제타푸드랩은 풍부한 기술과 지식을 바탕으로 HACCP 인증 획득 및 사후관리가 필요한 식품 및 바이오 업체에 솔루션을 제공합니다.",
+  "CONSULT_HACCP_BODY_2": "또한 기술제공을 통해 식품 및 바이오 업체의 지식재산권 관련 기술적 문제에 대한 컨설팅을 제공합니다.",
+  "CONSULT_HACCP_BODY_3": "제타푸드랩은 현재 국내 식품 업체와의 HACCP 컨설팅을 진행하며 HACCP 컨설팅 시장에서의 입지를 다져가고 있습니다.",
 
-  "CONSULT_HACCP_BODY_2_HEAD": "HACCP 이란?",
+  "CONSULT_HACCP_BODY_2_HEAD": "HACCP 컨설팅",
+  "CONSULT_HACCP_BODY_2_SUB_HEAD": "HACCP 이란?",
   "CONSULT_HACCP_BODY_2_1": "HACCP이란 식품의 원재료부터 제조, 가공, 보존, 유통, 조리단계를 거쳐 최종 소비자가 섭취하기 전까지 각 단계에서 발생할 우려가 있는 위해요소를 규명하고, 이를 중점적으로 관리하기 위한 중요관리점을 결정하여 자율적이며 체계적인 관리를 통해 식품의 안전성을 확보하기 위한 ‘위생관리체계’ 입니다.",
   "CONSULT_HACCP_BODY_2_2": "HACCP은 전 세계적으로 가장 효과적이고 효율적인 식품 안전 관리 체계로 인정받고 있으며, 미국, 일본, 유럽연합(EU), 국제기구(Codex, WHO, FAO) 등에서도 모든 식품에 HACCP을 적용할 것을 적극 권장하고 있습니다.",
 
   "CONSULT_HACCP_BODY_3_1": "HACCP 인증부터 사후관리까지",
   "CONSULT_HACCP_BODY_3_2": "과 함께하세요. ",
 
-  "CONSULT_IPRS_HEAD": "기술 컨설팅-지식재산권",
+  "CONSULT_IPRS_HEAD": "지식재산권 컨설팅",
   "CONSULT_IPRS_BODY_1": "이 보유한 풍부한 기술과 지식을 바탕으로",
   "CONSULT_IPRS_BODY_2": "식품 및 바이오 업체의 지식재산권 관련 기술적 문제에 대한 컨설팅을 제공합니다.",
+
+  "CONSULT_1": "HACCP 컨설팅",
+  "CONSULT_2": "HACCP 인증",
+  "CONSULT_3": "HACCP 사후관리",
+  "CONSULT_4": "식품 혁신 솔루션을 제공하는 기업",
+  "CONSULT_5": "지식재산권 컨설팅",
+  "CONSULT_6": "HACCP 인증·사후관리 및 지식재산권 컨설팅은",
+  "CONSULT_7": "과 함께하세요.",
 
   "MARKET_2": "국내산 재료를 이용하는 야생 녹차 브랜드 “화개제다”의 제품을 온라인 판매합니다. 화개제다는 녹차의 고장 하동에서 63년째 그 전통을 이어오고 있습니다."
 }

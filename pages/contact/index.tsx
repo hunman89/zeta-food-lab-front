@@ -17,11 +17,11 @@ const Contact: NextPage = () => {
       </Head>
       <ContactSub position={0} />
       <div className="w-full max-w-6xl mx-auto py-40">
-        <div className="flex flex-row space-x-5">
-          <div className="w-96 items-center">
+        <div className="flex flex-row space-x-8">
+          <div className="w-1/3 items-center">
             <Image className=" rounded-full object-cover" src={contact}></Image>
           </div>
-          <div className="flex flex-col justify-center px-16">
+          <div className="flex flex-col w-2/3 space-y-5 justify-center px-16">
             <div className="text-3xl text-gray-700 leading-loose">
               {t("CONTACT_BODY")}
             </div>

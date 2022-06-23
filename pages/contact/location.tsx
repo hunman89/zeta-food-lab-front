@@ -58,7 +58,7 @@ const Location: NextPage = () => {
           <div className="text-2xl text-gray-600 pt-4 pb-10">
             {t("LOCATION_OFFICE")}
           </div>
-          <div className="pt-10 border-t-2 border-gray-400">
+          <div className="pt-10 border-t-2 border-gray-400 w-[1045px] h-[545px]">
             <div id="map" style={{ width: "1040px", height: "540px" }}></div>
           </div>
         </div>

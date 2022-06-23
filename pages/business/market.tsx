@@ -24,14 +24,8 @@ const Market: NextPage = () => {
       <BusinessSub position={1} />
       <div className="w-full max-w-6xl mx-auto py-20">
         <div className="flex flex-col justify-around pt-20">
-          <div className="text-2xl pb-20 border-b-2 ">
-            <div className="flex flex-row space-x-3 animate-fadeInUp">
-              <TextDecoration />
-              <div>{t("MARKET_1")}</div>
-            </div>
-          </div>
-          <div className="flex flex-row pt-20">
-            <div className="w-1/3 h-20 my-auto">
+          <div className="flex flex-row">
+            <div className="w-1/3 my-auto">
               <Image
                 className="animate-fadeInUp"
                 objectFit="contain"
@@ -44,7 +38,8 @@ const Market: NextPage = () => {
               <div className="animate-fadeInUp">{t("MARKET_2")}</div>
             </div>
           </div>
-          <div className="grid grid-cols-4 gap-x-24 gap-y-5 py-40">
+          <div className="flex pl-5 pt-20 pb-5">바로가기</div>
+          <div className="grid grid-cols-4 gap-x-24 gap-y-5 pb-40">
             <Link href="https://smartstore.naver.com/zetafoodlab">
               <a target="_blank" className="my-auto">
                 <div className="grid w-full">

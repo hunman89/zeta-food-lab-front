@@ -27,28 +27,29 @@ const GreenTea: NextPage = () => {
         </div>
         <div className="flex flex-row justify-between">
           <div className="flex flex-col space-y-10">
-            <div className="text-xl">
+            <div className="text-xl space-y-3">
               <div>{t("GREEN_TEA_BODY_1")}</div>
               <div>{t("GREEN_TEA_BODY_2")}</div>
             </div>
-            <div className="text-xl">
+            <div className="text-xl space-y-3">
               <div>{t("GREEN_TEA_BODY_3")}</div>
               <div>{t("GREEN_TEA_BODY_4")}</div>
             </div>
           </div>
-
-          <div className="w-96 aspect-square">
+          <div className="h-64 w-96">
             <Image src={green_tea_hill}></Image>
             <div className="border border-zetalight h-64 w-96 -ml-4 -mt-60"></div>
           </div>
         </div>
-        <div className="flex flex-col px-24 pt-20 ">
-          <Image className="-z-10" quality={20} src={green_tea}></Image>
-        </div>
-        <div className="py-40">
-          <div className="px-20 text-justify text-xl font-medium">
-            {t("GREEN_TEA_BODY_5")}
-          </div>
+        <div className="flex h-auto w-full pt-20">
+          <Image
+            className="-z-10"
+            height={450}
+            width={1150}
+            quality={50}
+            objectFit="contain"
+            src={green_tea}
+          ></Image>
         </div>
       </div>
     </Layout>

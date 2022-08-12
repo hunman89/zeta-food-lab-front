@@ -4,14 +4,18 @@ import Layout from "../../components/layout";
 import Head from "next/head";
 import Image from "next/image";
 import green_tea from "../../public/images/RnD/green_tea.jpg";
+import green_tea_en from "../../public/images/RnD/green_tea_en.jpg";
 import green_tea_hill from "../../public/images/RnD/green_tea_hill.jpg";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import ResearchSub from "components/researchSub";
 import { useTranslation } from "next-i18next";
 import TextDecoration from "components/textDecoration";
+import { useRouter } from "next/router";
 
 const GreenTea: NextPage = () => {
   const { t } = useTranslation("research");
+  const { locale } = useRouter();
+
   return (
     <Layout footer>
       <Head>
@@ -48,7 +52,7 @@ const GreenTea: NextPage = () => {
             width={1150}
             quality={50}
             objectFit="contain"
-            src={green_tea}
+            src={locale == "ko" ? green_tea : green_tea_en}
           ></Image>
         </div>
       </div>

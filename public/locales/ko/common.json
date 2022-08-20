@@ -4,6 +4,7 @@
 
   "ZETA_NAME": "제타푸드랩",
   "ZETA_ADDRESS": "경기도 시흥시 배곧2로 82, 서울대학교 시흥캠퍼스 미래모빌리티동 602호, 15011",
+  "ZETA_NAME_SIMPLE": "(주)제타푸드랩",
 
   "SUBMENU_ABOUT_OVERVIEW": "기업 소개",
   "SUBMENU_ABOUT_HISTORY": "연혁",
@@ -15,5 +16,19 @@
   "SUBMENU_BUSINESS_CONSULT": "기술 컨설팅",
   "SUBMENU_BUSINESS_MARKET": "온라인 판매",
   "SUBMENU_CONTACT_CONTACT": "문의",
-  "SUBMENU_CONTACT_LOCATION": "오시는길"
+  "SUBMENU_CONTACT_LOCATION": "오시는길",
+
+  "MAIN_RND_SUBHEADER": "주)제타푸드랩만의 독자적 기술인 비색반응을 이용한 바이오센서 기술 및 발효음료 특허를 기반으로 미생물 진단, 음료 등 다양한 분야에서 핵심 제품을 개발하고 있습니다.",
+  "MAIN_RND_SCREENING_HEADER": "현장용 미생물 진단 센서",
+  "MAIN_RND_SCREENING_BODY": "고감도의 비색반응과 향상된 민감도 기반 기술인 바이오 진단 센서로 식품제조 및 급식업 현장에서 필요한 제품을 개발하고 있습니다.",
+  "MAIN_RND_FERMENT_HEADER": "녹차 발효 음료 개발",
+  "MAIN_RND_FERMENT_BODY": "녹차의 고장 하동에서 생산된 야생녹차를 이용하여 다양한 녹차 발효 음료 개발을 진행하고 있습니다.",
+  "MAIN_RND_FUNDED_HEADER": "국가 지원 사업",
+  "MAIN_RND_FUNDED_BODY": "뛰어난 기술과 보유중인 특허를 기반으로 여러 국가 지원 사업에 참여, 식품 및 음료 등 다양한 연구를 진행하고 있습니다.",
+
+  "MAIN_BUSINESS_SUBHEADER": "㈜제타푸드랩은 식품업체의 기술적 문제점을 해결하고자 다양한 기술 컨설팅을 제공합니다.",
+  "MAIN_BUSINESS_HACCP_LINK": "HACCP",
+  "MAIN_BUSINESS_IPRS_LINK": "지식재산권",
+
+  "MAIN_PARTNERS_SUBHEADER": "은 우수한 식품 및 바이오 기업들과 협력합니다."
 }

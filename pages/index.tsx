@@ -41,7 +41,7 @@ const Home: NextPage = () => {
           style={{
             background: `linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url("/images/bio.png")`,
             backgroundRepeat: "no-repeat",
-            backgroundPosition: "bottom",
+            backgroundSize: "cover",
           }}
         >
           <div className="flex w-full flex-col py-80 max-w-6xl mx-auto space-y-4 text-5xl font-black">
@@ -72,9 +72,8 @@ const Home: NextPage = () => {
           className="w-full h-screen snap-start snap-always"
           style={{
             background: `linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("/images/bio2.png")`,
-            backgroundSize: "contain",
             backgroundRepeat: "no-repeat",
-            backgroundPosition: "bottom",
+            backgroundSize: "cover",
           }}
         >
           <div className=" pt-52 max-w-6xl mx-auto text-white">

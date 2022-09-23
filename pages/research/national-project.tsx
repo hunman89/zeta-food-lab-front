@@ -26,10 +26,10 @@ const NationalProject: NextPage = () => {
         </div>
         <div className="flex flex-col space-y-3">
           <div className="flex flex-row">
-            <div className="flex w-32 px-5 text-3xl font-bold text-gray-800 border-gray-300 border-r-2">
+            <div className="flex w-1/6 px-5 text-3xl font-bold text-gray-800 border-gray-300 border-r-2">
               2022
             </div>
-            <div className="flex flex-col text-xl text-gray-800 py-8 gap-3 pl-5">
+            <div className="flex w-5/6 flex-col text-xl text-gray-800 py-8 gap-3 pl-5">
               <div>{t("FUNDED_2022_01")}</div>
               <div>{t("FUNDED_2022_02")}</div>
               <div>{t("FUNDED_2022_03")}</div>
@@ -40,17 +40,19 @@ const NationalProject: NextPage = () => {
             </div>
           </div>
           <div className="flex flex-row">
-            <div className="flex w-32 px-5 text-3xl font-bold text-gray-800 border-gray-300 border-r-2">
+            <div className="flex w-1/6 px-5 text-3xl font-bold text-gray-800 border-gray-300 border-r-2">
               2021
             </div>
-            <div className="flex flex-col text-xl text-gray-800 py-8 gap-3 pl-5">
-              <div>{t("FUNDED_2021_01")}</div>
-              <div>{t("FUNDED_2021_02")}</div>
-              <div>{t("FUNDED_2021_03")}</div>
-              <div>{t("FUNDED_2021_04")}</div>
-            </div>
-            <div className="w-80 ml-80">
-              <Image src={national} className="rounded-3xl"></Image>
+            <div className="flex flex-row w-5/6">
+              <div className="w-3/5 flex flex-col text-xl text-gray-800 py-8 gap-3 pl-5">
+                <div>{t("FUNDED_2021_01")}</div>
+                <div>{t("FUNDED_2021_02")}</div>
+                <div>{t("FUNDED_2021_03")}</div>
+                <div>{t("FUNDED_2021_04")}</div>
+              </div>
+              <div className="w-2/5 drop-shadow-2xl">
+                <Image src={national} className="rounded-3xl"></Image>
+              </div>
             </div>
           </div>
         </div>

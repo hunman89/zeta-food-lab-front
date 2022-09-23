@@ -2,14 +2,19 @@
   "ZETA_NAME": "ZETAFOODLAB",
 
   "CONSULT_HACCP_HEAD": "Technical consulting-HACCP",
-  "CONSULT_HACCP_BODY_1": "provides solutions to food and bio companies",
-  "CONSULT_HACCP_BODY_2": "that require HACCP certification through technology delivery.",
-  "CONSULT_HACCP_BODY_3": "We will do our best to provide customized consulting",
-  "CONSULT_HACCP_BODY_4": "for the customer's situation.",
-  "CONSULT_HACCP_BODY_5": "We are strengthening our position in the HACCP consulting market through HACCP consulting",
-  "CONSULT_HACCP_BODY_6": "with domestic food companies-'INTAKE', 'HWAGAEJAEDA', and 'HWANGGEUMISSAK'.",
+  "CONSULT_HACCP_BODY_1": "We, equipped with state-of-art knowledge and technology, support solutions for HACCP certification and follow-up management to food and bio compaanies",
+  "CONSULT_HACCP_BODY_2": "We also support technological consulting on difficulties of food and bio companies via technology transformation.",
+  "CONSULT_HACCP_BODY_3": "We are strengthening our position in HACCP consulting market through several on-going consulting projects with domestic food companies.",
+  "CONSULT_HACCP_TABLE_1": "On-Going HACCP Consulting Contracts",
+  "CONSULT_HACCP_TABLE_2": "Hwagaejaeda",
+  "CONSULT_HACCP_TABLE_3": "Hwanggeum-isak",
+  "CONSULT_HACCP_TABLE_4": "INTAKE Corporation",
 
   "CONSULT_HACCP_BODY_2_HEAD": "What is HACCP?",
+  "CONSULT_HACCP_BODY_2_HA_1": "Hazard Analysis",
+  "CONSULT_HACCP_BODY_2_HA_2": "Analysis of biological, chemical and physical Hazards such as pathogenic microorganisms in raw materials and manufacturing process",
+  "CONSULT_HACCP_BODY_2_CCP_1": "Critical Control Point",
+  "CONSULT_HACCP_BODY_2_CCP_2": "Critical control of the manufacturing process to prevent, control and/or reduce to the tolerance level",
   "CONSULT_HACCP_BODY_2_1": "HACCP is a \"sanitary management system\" to ensure food safety through autonomous and systematic management by identifying hazards that may occur at each stage from raw materials to manufacturing, processing, preservation, distribution, and cooking.",
   "CONSULT_HACCP_BODY_2_2": "HACCP is recognized as the most effective and efficient food safety management system worldwide. The United States, Japan, the European Union, and international organizations (Codex, WHO, FAO) are also actively encouraging HACCP to be applied to all foods.",
 
@@ -28,5 +33,6 @@
   "CONSULT_6": "Get HACCP certification and follow-up management with",
   "CONSULT_7": "",
 
-  "MARKET_2": "We sell products of \"HWAGAE,\" a wild green tea brand that uses domestic ingredients, online. Hwagae Jedda has continued its tradition for 63 years in Hadong, the hometown of green tea."
+  "MARKET_2": "We sell products of \"HWAGAE,\" a wild green tea brand that uses domestic ingredients, online. Hwagae Jedda has continued its tradition for 63 years in Hadong, the hometown of green tea.",
+  "MARKET_LINK": "Linked To"
 }

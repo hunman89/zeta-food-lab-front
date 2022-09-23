@@ -35,7 +35,7 @@ const Ceo: NextPage = () => {
                 src={locale === "ko" ? ceo_ko : ceo_en}
               />
             </div>
-            <div className=" w-1/2 flex flex-col space-y-10">
+            <div className=" w-1/2 flex flex-col justify-around">
               <div className="text-lg font-bold text-zetalight">
                 {t("CEO_3")}
               </div>

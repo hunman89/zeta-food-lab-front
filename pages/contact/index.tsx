@@ -25,13 +25,13 @@ const Contact: NextPage = () => {
             <div className="text-3xl text-gray-700 leading-loose">
               {t("CONTACT_BODY")}
             </div>
-            <div className="text-2xl py-4 text-gray-900 font-bold">
+            <div className="text-2xl py-4 text-gray-900 font-bold underline">
               zetafoodlab@gmail.com
             </div>
             <div>
               <a
                 href="mailto:zetafoodlab@gmail.com"
-                className="text-xl border-none p-2 bg-zetalight text-white"
+                className="text-xl border-none p-2 bg-zetalight hover:bg-zetadark text-white"
               >
                 {t("CONTACT_BUTTON")}
               </a>

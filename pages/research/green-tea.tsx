@@ -29,8 +29,8 @@ const GreenTea: NextPage = () => {
             <div>{t("GREEN_TEA_HEAD")}</div>
           </div>
         </div>
-        <div className="flex flex-row justify-between">
-          <div className="flex flex-col space-y-10">
+        <div className="flex flex-row space-x-5">
+          <div className="flex flex-col space-y-10 w-2/3">
             <div className="text-xl space-y-3">
               <div>{t("GREEN_TEA_BODY_1")}</div>
               <div>{t("GREEN_TEA_BODY_2")}</div>
@@ -40,9 +40,12 @@ const GreenTea: NextPage = () => {
               <div>{t("GREEN_TEA_BODY_4")}</div>
             </div>
           </div>
-          <div className="h-64 w-96">
-            <Image src={green_tea_hill}></Image>
-            <div className="border border-zetalight h-64 w-96 -ml-4 -mt-60"></div>
+          <div className="w-1/3 drop-shadow-2xl">
+            <Image
+              src={green_tea_hill}
+              objectFit="contain"
+              className="rounded-3xl"
+            ></Image>
           </div>
         </div>
         <div className="flex h-auto w-full pt-20">
@@ -50,7 +53,6 @@ const GreenTea: NextPage = () => {
             className="-z-10"
             height={450}
             width={1150}
-            quality={50}
             objectFit="contain"
             src={locale == "ko" ? green_tea : green_tea_en}
           ></Image>

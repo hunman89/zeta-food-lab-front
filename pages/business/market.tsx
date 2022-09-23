@@ -38,10 +38,12 @@ const Market: NextPage = () => {
               <div className="animate-fadeInUp">{t("MARKET_2")}</div>
             </div>
           </div>
-          <div className="flex pl-5 pt-20 pb-5">바로가기</div>
+          <div className="flex pl-5 pt-20 pb-5 text-xl text-slate-700 underline">
+            {t("MARKET_LINK")}
+          </div>
           <div className="grid grid-cols-4 gap-x-24 gap-y-5 pb-40">
             <Link href="https://smartstore.naver.com/zetafoodlab">
-              <a target="_blank" className="my-auto">
+              <a target="_blank" className="my-auto hover:brightness-90">
                 <div className="grid w-full">
                   <Image
                     layout="responsive"
@@ -53,7 +55,7 @@ const Market: NextPage = () => {
               </a>
             </Link>
             <Link href="https://store.coupang.com/link/zetafoodlab">
-              <a target="_blank" className="my-auto">
+              <a target="_blank" className="my-auto hover:brightness-90">
                 <div className="grid w-full">
                   <Image
                     layout="responsive"
@@ -65,7 +67,7 @@ const Market: NextPage = () => {
               </a>
             </Link>
             <Link href="https://store.kakao.com/zetafoodlab">
-              <a target="_blank">
+              <a target="_blank" className="hover:brightness-90">
                 <div className="grid w-full my-auto">
                   <Image
                     layout="responsive"
@@ -77,7 +79,7 @@ const Market: NextPage = () => {
               </a>
             </Link>
             <Link href="https://www.sanrim.com/shop/search.php?q=%ED%99%94%EA%B0%9C%EC%A0%9C%EB%8B%A4">
-              <a target="_blank">
+              <a target="_blank" className="hover:brightness-90">
                 <div className="grid w-full my-auto">
                   <Image
                     layout="responsive"

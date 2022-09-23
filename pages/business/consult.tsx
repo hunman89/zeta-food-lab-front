@@ -25,7 +25,7 @@ const Consult: NextPage = () => {
             </div>
           </div>
           <div className="flex flex-row justify-between space-x-10">
-            <div className="flex flex-col w-1/2 text-2xl font-medium space-y-20">
+            <div className="flex flex-col w-1/2 text-2xl font-medium space-y-10">
               <div className="animate-fadeInUp">
                 <div>{t("CONSULT_HACCP_BODY_1")}</div>
               </div>
@@ -35,38 +35,19 @@ const Consult: NextPage = () => {
               <div className="animate-fadeInUp">
                 {t("CONSULT_HACCP_BODY_3")}
               </div>
-              <table className="table-auto">
-                <thead>
-                  <tr>
-                    <th className="border border-slate-600 py-2">
-                      HACCP 컨설팅 진행
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td className="text-center border text-slate-700 border-slate-600 py-1">
-                      화개제다
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="text-center border text-slate-700 border-slate-600 py-1">
-                      황금이삭
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="text-center border text-slate-700 border-slate-600 py-1">
-                      인테이크
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div className="flex flex-col w-1/2 items-center">
-              <div className="h-64 w-96">
-                <Image src={consult}></Image>
+              <div>
+                <div className=" py-2 underline">
+                  {t("CONSULT_HACCP_TABLE_1")}
+                </div>
+                <ul className="list-disc text-xl text-slate-700">
+                  <li className="py-1">{t("CONSULT_HACCP_TABLE_2")}</li>
+                  <li className="py-1">{t("CONSULT_HACCP_TABLE_3")}</li>
+                  <li className="py-1">{t("CONSULT_HACCP_TABLE_4")}</li>
+                </ul>
               </div>
-              <div className="border border-zetalight h-64 w-96 ml-4 -mt-60"></div>
+            </div>
+            <div className="flex flex-col w-1/2 items-center drop-shadow-2xl">
+              <Image src={consult} className="rounded-2xl"></Image>
             </div>
           </div>
           <div className="pt-40">
@@ -74,17 +55,15 @@ const Consult: NextPage = () => {
               <TextDecoration />
               <div>{t("CONSULT_HACCP_BODY_2_HEAD")}</div>
             </div>
-            <div className="pt-5 text-3xl font-medium">
-              {t("CONSULT_HACCP_BODY_2_SUB_HEAD")}
-            </div>
             <div className="flex flex-col pt-20">
               <div className="flex flex-row justify-center space-x-3">
                 <div className="flex flex-col w-96 border-[14px] items-center justify-center border-emerald-500 rounded-full aspect-square">
                   <div className="text-emerald-500 font-bold text-7xl">HA</div>
-                  <div className="font-bold text-3xl pt-5">위해요소분석</div>
+                  <div className="font-bold text-3xl pt-5">
+                    {t("CONSULT_HACCP_BODY_2_HA_1")}
+                  </div>
                   <div className="text-xl pt-4 text-gray-500 w-3/4 text-center">
-                    원료와 공정에서 발생가능한 병원성 미생물 등 생물학적,
-                    화학적, 물리적, 위해요소 분석
+                    {t("CONSULT_HACCP_BODY_2_HA_2")}
                   </div>
                 </div>
                 <div className="flex justify-center items-center">
@@ -103,10 +82,11 @@ const Consult: NextPage = () => {
                 </div>
                 <div className="flex flex-col w-96 border-[14px] items-center justify-center border-indigo-700 rounded-full aspect-square">
                   <div className="text-indigo-700 font-bold text-7xl">CCP</div>
-                  <div className="font-medium text-3xl pt-5">중요관리점</div>
+                  <div className="font-medium text-3xl pt-5">
+                    {t("CONSULT_HACCP_BODY_2_CCP_1")}
+                  </div>
                   <div className="text-xl pt-4 text-gray-500 w-3/4 text-center">
-                    위해요소를 예방, 제어 또는 허용수준으로 감소시킬 수 있는
-                    공정이나 단계를 중점관리
+                    {t("CONSULT_HACCP_BODY_2_CCP_2")}
                   </div>
                 </div>
               </div>
@@ -116,8 +96,8 @@ const Consult: NextPage = () => {
               </div>
             </div>
           </div>
-          <div className="pb-40">
-            <div className="py-40">
+          <div className="py-20">
+            <div className="py-20">
               <a id="IPRs">
                 <div className="flex flex-row space-x-2 text-4xl font-bold">
                   <TextDecoration />
@@ -151,7 +131,7 @@ const Consult: NextPage = () => {
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
-                  stroke-width="2"
+                  strokeWidth="2"
                 >
                   <path
                     strokeLinecap="round"
@@ -177,7 +157,7 @@ const Consult: NextPage = () => {
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
-                  stroke-width="2"
+                  strokeWidth="2"
                 >
                   <path
                     strokeLinecap="round"

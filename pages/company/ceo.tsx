@@ -6,7 +6,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Image from "next/image";
 import sign from "../../public/images/sign.png";
 import ceo_en from "../../public/images/ceo_en.png";
-import ceo_ko from "../../public/images/ceo_ko.png";
+import ceo_kr from "../../public/images/ceo_kr.png";
 import CompanySub from "components/companySub";
 import { useRouter } from "next/router";
 import { useTranslation } from "next-i18next";
@@ -32,7 +32,7 @@ const Ceo: NextPage = () => {
                 objectFit="contain"
                 layout="responsive"
                 className="rounded-xl"
-                src={locale === "ko" ? ceo_ko : ceo_en}
+                src={locale === "kr" ? ceo_kr : ceo_en}
               />
             </div>
             <div className=" w-1/2 flex flex-col justify-around">

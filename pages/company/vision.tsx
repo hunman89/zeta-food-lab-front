@@ -5,7 +5,7 @@ import Head from "next/head";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import CompanySub from "components/companySub";
-import vision_ko from "../../public/images/vision_ko.jpg";
+import vision_kr from "../../public/images/vision_kr.jpg";
 import vision_en from "../../public/images/vision_en.jpg";
 import Image from "next/image";
 import { useRouter } from "next/router";
@@ -29,7 +29,7 @@ const Vision: NextPage = () => {
           </div>
         </div>
         <div className="flex pt-20 justify-center">
-          <Image src={locale === "ko" ? vision_ko : vision_en}></Image>
+          <Image src={locale === "kr" ? vision_kr : vision_en}></Image>
         </div>
       </div>
     </Layout>

@@ -54,7 +54,7 @@ const GreenTea: NextPage = () => {
             height={450}
             width={1150}
             objectFit="contain"
-            src={locale == "ko" ? green_tea : green_tea_en}
+            src={locale == "kr" ? green_tea : green_tea_en}
           ></Image>
         </div>
       </div>

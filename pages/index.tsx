@@ -19,6 +19,8 @@ import business from "../public/images/business.jpg";
 import { useEffect, useState } from "react";
 import { cls } from "utils/utils";
 import { useTranslation } from "next-i18next";
+import { useRouter } from "next/router";
+import Link from "next/link";
 
 const Home: NextPage = () => {
   const [scrollPosition, setScrollPosition] = useState<string | undefined>(
@@ -30,6 +32,7 @@ const Home: NextPage = () => {
     }
   };
   const { t } = useTranslation("common");
+  const { locale } = useRouter();
 
   return (
     <Layout>
@@ -95,64 +98,70 @@ const Home: NextPage = () => {
               </div>
               <div className="flex flex-row pt-20 px-14 space-x-10 justify-center">
                 <div className=" bg-zetalight w-1/3 ease-in-out transition duration-300 opacity-70 hover:opacity-100 hover:scale-110">
-                  <a href="/research/sensor">
-                    <div className="p-10 font-medium text-xl text-center">
-                      {t("MAIN_RND_SCREENING_HEADER")}
-                    </div>
-                    <div className="px-10 pb-10 h-32 text-justify indent-4">
-                      {t("MAIN_RND_SCREENING_BODY")}
-                    </div>
-                    <div className="flex justify-end p-3">
-                      <div className="w-24">
-                        <Image
-                          objectFit="contain"
-                          src={bacteria}
-                          alt="bacteria"
-                          layout="responsive"
-                        ></Image>
+                  <Link href={"/research/sensor"} locale={locale}>
+                    <a>
+                      <div className="p-10 font-medium text-xl text-center">
+                        {t("MAIN_RND_SCREENING_HEADER")}
                       </div>
-                    </div>
-                  </a>
+                      <div className="px-10 pb-10 h-32 text-justify indent-4">
+                        {t("MAIN_RND_SCREENING_BODY")}
+                      </div>
+                      <div className="flex justify-end p-3">
+                        <div className="w-24">
+                          <Image
+                            objectFit="contain"
+                            src={bacteria}
+                            alt="bacteria"
+                            layout="responsive"
+                          ></Image>
+                        </div>
+                      </div>
+                    </a>
+                  </Link>
                 </div>
                 <div className=" bg-zetadark w-1/3 ease-in-out transition duration-300 opacity-70 hover:opacity-100 hover:scale-110">
-                  <a href="/research/green-tea">
-                    <div className="p-10 font-medium text-xl text-center">
-                      {t("MAIN_RND_FERMENT_HEADER")}
-                    </div>
-                    <div className="px-10 pb-10 h-32 text-justify indent-4">
-                      {t("MAIN_RND_FERMENT_BODY")}
-                    </div>
-                    <div className="flex justify-end p-3">
-                      <div className="w-24">
-                        <Image
-                          objectFit="contain"
-                          src={liquor}
-                          alt="liquor"
-                          layout="responsive"
-                        ></Image>
+                  <Link href={"/research/green-tea"} locale={locale}>
+                    <a>
+                      <div className="p-10 font-medium text-xl text-center">
+                        {t("MAIN_RND_FERMENT_HEADER")}
                       </div>
-                    </div>
-                  </a>
+                      <div className="px-10 pb-10 h-32 text-justify indent-4">
+                        {t("MAIN_RND_FERMENT_BODY")}
+                      </div>
+                      <div className="flex justify-end p-3">
+                        <div className="w-24">
+                          <Image
+                            objectFit="contain"
+                            src={liquor}
+                            alt="liquor"
+                            layout="responsive"
+                          ></Image>
+                        </div>
+                      </div>
+                    </a>
+                  </Link>
                 </div>
                 <div className=" bg-gray-700 w-1/3 ease-in-out transition duration-300 opacity-70 hover:opacity-100 hover:scale-110">
-                  <a href="/research/national-project">
-                    <div className="p-10 font-medium text-xl text-center">
-                      {t("MAIN_RND_FUNDED_HEADER")}
-                    </div>
-                    <div className="px-10 pb-10 h-32 text-justify indent-4">
-                      {t("MAIN_RND_FUNDED_BODY")}
-                    </div>
-                    <div className="flex justify-end p-3">
-                      <div className="w-24">
-                        <Image
-                          objectFit="contain"
-                          src={hand}
-                          alt="hand"
-                          layout="responsive"
-                        ></Image>
+                  <Link href={"/research/national-project"} locale={locale}>
+                    <a>
+                      <div className="p-10 font-medium text-xl text-center">
+                        {t("MAIN_RND_FUNDED_HEADER")}
                       </div>
-                    </div>
-                  </a>
+                      <div className="px-10 pb-10 h-32 text-justify indent-4">
+                        {t("MAIN_RND_FUNDED_BODY")}
+                      </div>
+                      <div className="flex justify-end p-3">
+                        <div className="w-24">
+                          <Image
+                            objectFit="contain"
+                            src={hand}
+                            alt="hand"
+                            layout="responsive"
+                          ></Image>
+                        </div>
+                      </div>
+                    </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -174,52 +183,50 @@ const Home: NextPage = () => {
               </div>
               <div className="pt-10 flex flex-col justify-start text-gray-700 text-2xl font-semibold space-y-4">
                 <div className="flex">
-                  <a
-                    href="/business/consult"
-                    className="group flex flex-row justify-start items-center"
-                  >
-                    <div className=" align-middle pr-3 group-hover:text-[#0053a6]">
-                      {t("MAIN_BUSINESS_HACCP_LINK")}
-                    </div>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-6 w-6 bg-emerald-600 group-hover:bg-emerald-500 text-white rounded-sm"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M9 5l7 7-7 7"
-                      />
-                    </svg>
-                  </a>
+                  <Link href={"/business/consult"} locale={locale}>
+                    <a className="group flex flex-row justify-start items-center">
+                      <div className=" align-middle pr-3 group-hover:text-[#0053a6]">
+                        {t("MAIN_BUSINESS_HACCP_LINK")}
+                      </div>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="h-6 w-6 bg-emerald-600 group-hover:bg-emerald-500 text-white rounded-sm"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M9 5l7 7-7 7"
+                        />
+                      </svg>
+                    </a>
+                  </Link>
                 </div>
                 <div className="flex">
-                  <a
-                    href="/business/consult#IPRs"
-                    className="group flex flex-row justify-start items-center"
-                  >
-                    <div className=" align-middle pr-3  group-hover:text-[#0053a6]">
-                      {t("MAIN_BUSINESS_IPRS_LINK")}
-                    </div>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-6 w-6 bg-emerald-600 group-hover:bg-emerald-500 text-white rounded-sm"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M9 5l7 7-7 7"
-                      />
-                    </svg>
-                  </a>
+                  <Link href={"/business/consult#IPRs"} locale={locale}>
+                    <a className="group flex flex-row justify-start items-center">
+                      <div className=" align-middle pr-3  group-hover:text-[#0053a6]">
+                        {t("MAIN_BUSINESS_IPRS_LINK")}
+                      </div>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="h-6 w-6 bg-emerald-600 group-hover:bg-emerald-500 text-white rounded-sm"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M9 5l7 7-7 7"
+                        />
+                      </svg>
+                    </a>
+                  </Link>
                 </div>
               </div>
             </div>

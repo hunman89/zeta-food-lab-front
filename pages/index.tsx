@@ -21,6 +21,8 @@ import { cls } from "utils/utils";
 import { useTranslation } from "next-i18next";
 import { useRouter } from "next/router";
 import Link from "next/link";
+import Head from 'next/head'
+
 
 const Home: NextPage = () => {
   const [scrollPosition, setScrollPosition] = useState<string | undefined>(
@@ -36,6 +38,20 @@ const Home: NextPage = () => {
 
   return (
     <Layout>
+       <Head>
+        <title>주식회사 제타푸드랩 (zetafoodlab Co., Ltd.)</title>
+        <meta property="og:title" content="주식회사 제타푸드랩 (zetafoodlab Co., Ltd.)" key="title" />
+        <meta name="description" content="(주)제타푸드랩은 식품 산업용 미생물 신속 스크링닝 기술 개발 및 식품 전처리 기술(pre-MSK)개발하여 식품 산업의 새로운 가치를 창출해 나가고 있습니다. 
+또한  식품업체의 어려움을 해결하기 위한 HACCP, 지식재산권, 식품 및 음료 개발등과 같은  다양한 컨설팅으로 국내의 식품업체에 솔루션을 제공하고 있습니다." key="desc" />
+        <meta
+          property="og:description"
+          content="식품 및 바이오업체 토탈 솔루션 제공. HACCP, 식품 및 바이오업체 컨설팅, 식품 개발 등."
+        />
+        <meta
+          property="og:image"
+          content="https://www.zetafoodlab.com/logos/logo.png"
+        />
+      </Head>
       <div
         id="main"
         onScroll={getPosition}

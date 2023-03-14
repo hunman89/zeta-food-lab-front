@@ -21,6 +21,8 @@ import { cls } from "utils/utils";
 import { useTranslation } from "next-i18next";
 import { useRouter } from "next/router";
 import Link from "next/link";
+import Head from 'next/head'
+
 
 const Home: NextPage = () => {
   const [scrollPosition, setScrollPosition] = useState<string | undefined>(

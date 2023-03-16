@@ -44,10 +44,10 @@ const Header = () => {
             </div>
           </div>
           <div className="flex flex-row space-x-2 w-32 justify-center">
-            <Link href="/" locale="kr">
+            <Link href="/" locale="ko">
               <button
                 className={
-                  locale == "kr"
+                  locale === "ko"
                     ? "underline underline-offset-4 text-zetalight decoration-zetalight decoration-2"
                     : "text-gray-500"
                 }
@@ -59,7 +59,7 @@ const Header = () => {
             <Link href="/" locale="en">
               <button
                 className={
-                  locale == "en"
+                  locale === "en"
                     ? "underline underline-offset-4 text-zetalight decoration-zetalight decoration-2"
                     : "text-gray-500"
                 }

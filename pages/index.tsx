@@ -16,7 +16,7 @@ import bacteria from "../public/icons/bacteria.png";
 import liquor from "../public/icons/liquor.png";
 import hand from "../public/icons/hand.png";
 import business from "../public/images/business.jpg";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { cls } from "utils/utils";
 import { useTranslation } from "next-i18next";
 import { useRouter } from "next/router";
@@ -29,7 +29,7 @@ const Home: NextPage = () => {
     "main1"
   );
   const getPosition = () => {
-    if (scrollPosition != document.elementFromPoint(50, 100)?.id) {
+    if (scrollPosition !== document.elementFromPoint(50, 100)?.id) {
       setScrollPosition(document.elementFromPoint(50, 100)?.id);
     }
   };
